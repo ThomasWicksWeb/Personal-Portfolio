@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry's Tax Extravoganza!</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="./js/scripts.js"></script>
+
+</head>
+
+<body>
+
+    <main class="bodyWrapper">
+        <header>
+            <h1>Tax Guide</h1>
+            <h3 id="timeText">&nbsp;</h3>
+            <a href="#scroll" data-scroll class="btn">Let's get started</a>
+        </header>
+
+
+        <!-- User inputs their hourly wages here  -->
+        <div id="scroll" class="nameContainer">
+            <div class="Col marginLrg">
+                <p class="dataText">What is your first name?</p>
+                <input type="text" id="firstName">
+            </div>
+
+            <div class="Col marginLrg">
+                <p class="dataText">and your last name?</p>
+                <input type="text" id="lastName">
+            </div>
+
+            <div class="Col marginLrg">
+                <p class="dataText">What is your address?</p>
+                <input type="text" id="address">
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <button id="continueBtn" class="mainBtn"><a href="#sec2Btn">Continue</a></button>
+        </div>
+
+        <div class="wrapper">
+            <p id="helloText" class="biggertxt underline">&nbsp;</p>
+        </div>
+
+        <!--
+        <div class="wrapper" id="deductablesSection">
+            <p class="biggertxt">How many duductables are you claiming?</p>
+            <input id="deductable" type="number" min="0" max="10" class="deductInput">
+        </div>
+-->
+
+
+
+        <!-- User inputs their hourly wages here  -->
+        <div class="inputContainer">
+            <div class="Col marginLrg hrly">
+                <p class="dataText">What is your hourly pay?</p>
+                <input type="number" id="hourlyPayRate" min="0" class="userPayRate">
+            </div>
+
+            <div id="or" class="Col or">OR</div>
+
+            <div class="Col marginLrg yrly">
+                <p class="dataText">What is your yearly salary?</p>
+                <input type="number" id="yearlyPayRate" min="0" class="userPayRate">
+            </div>
+        </div>
+        <div class="wrapper">
+            <button id="sec2Btn" class="mainBtn"><a href="#viewProjectionsBtn">Continue</a></button>
+        </div>
+
+        <section id="userInfo" class="container">
+
+            <!-- Output for $ taken out for Social Security  -->
+            <div class="userLine">
+                <p class="dataText">Taken out for Social Security</p>
+                <p id="socSecurity" class="dataTextNum">$00.00</p>
+            </div>
+
+            <!-- Output for $ taken out for Medicade  -->
+            <div class="userLine">
+                <p class="dataText">Taken out for Medicare</p>
+                <p id="medicarePay" class="dataTextNum">$00.00</p>
+            </div>
+
+            <!-- Output for $ taken out for Federal Taxes  -->
+            <div class="userLine">
+                <p class="dataText">Taken out for Federal taxes</p>
+                <p id="federalPay" class="dataTextNum">$00.00</p>
+            </div>
+
+            <!-- Output for $ taken out for State Taxes  -->
+            <div class="userLine">
+                <p class="dataText">Taken out for State taxes</p>
+                <p id="statePay" class="dataTextNum">$00.00</p>
+            </div>
+
+            <!-- Final Bi-Weekly Paycheck amount AFTER TAXES -->
+            <div class="userLine">
+                <p class="dataText">Bi-Weekly Paycheck after taxes</p>
+                <p id="finalCheck" class="dataTextNum">$00.00</p>
+            </div>
+
+            <!-- Paycheck Amount BEFORE TAXES -->
+            <div class="userLine">
+                <p class="dataText">Bi-weekly pay before taxes</p>
+                <p id="biWeeklyPay" class="dataTextNum">$00.00</p>
+            </div>
+
+        </section>
+
+        <div class="wrapper">
+            <button id="viewProjectionsBtn" class="mainBtn"><a href="#futureA">View Projections</a></button>
+        </div>
+
+        <div class="wrapper">
+            <p id="percentInc" class="biggertxt">With a 2.76% increase each year...</p>
+        </div>
+
+        <section class="projectionWrapper">
+
+            <div id="futureA" class="projectionContainer">
+                <p class="futureYear">In 1 year</p>
+                <div>
+                    <span>
+                        <p>Final Pay after taxes: </p>
+                        <p id="year1FinalPay" class="futurePay">&nbsp;</p>
+                    </span>
+                    <span>
+                        <p>Social Security: </p>
+                        <p id="year1SocSec" class="futurePay">&nbsp;</p>
+                    </span>
+                    <span>
+                        <p>Federal Tax: </p>
+                        <p id="year1FedTax" class="futurePay">&nbsp;</p>
+                    </span>
+                    <span>
+                        <p>Medicare: </p>
+                        <p id="year1Medicare" class="futurePay">&nbsp;</p>
+                    </span>
+                    <span>
+                        <p>State Tax: </p>
+                        <p id="year1StateTax" class="futurePay">&nbsp;</p>
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="projectionContainer">
+                <p class="futureYear">In 2 years</p>
+                <div>
+                    <span>
+                        <p>Final Pay after taxes: </p>
+                        <p id="year2FinalPay" class="futurePay">&nbsp;</p>
+                    </span>
+                    <span>
+                        <p>Social Security: </p>
+                        <p id="year2SocSec" class="futurePay">&nbsp;</p>
+                    </span>
+                    <span>
+                        <p>Federal Tax: </p>
+                        <p id="year2FedTax" class="futurePay">&nbsp;</p>
+                    </span>
+                    <span>
+                        <p>Medicare: </p>
+                        <p id="year2Medicare" class="futurePay">&nbsp;</p>
+                    </span>
+                    <span>
+                        <p>State Tax: </p>
+                        <p id="year2StateTax" class="futurePay">&nbsp;</p>
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="projectionContainer">
+                <p class="futureYear">In 3 years</p>
+                <div>
+                    <span>
+                        <p>Final Pay after taxes: </p>
+                        <p id="year3FinalPay" class="futurePay">&nbsp;</p>
+                    </span>
+                    <span>
+                        <p>Social Security: </p>
+                        <p id="year3SocSec" class="futurePay">&nbsp;</p>
+                    </span>
+                    <span>
+                        <p>Federal Tax: </p>
+                        <p id="year3FedTax" class="futurePay">&nbsp;</p>
+                    </span>
+                    <span>
+                        <p>Medicare: </p>
+                        <p id="year3Medicare" class="futurePay">&nbsp;</p>
+                    </span>
+                    <span>
+                        <p>State Tax: </p>
+                        <p id="year3StateTax" class="futurePay">&nbsp;</p>
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="projectionContainer">
+                <p class="futureYear">In 4 years</p>
+                <div>
+                    <span>
+                        <p>Final Pay after taxes: </p>
+                        <p id="year4FinalPay" class="futurePay">&nbsp;</p>
+                    </span>
+                    <span>
+                        <p>Social Security: </p>
+                        <p id="year4SocSec" class="futurePay">&nbsp;</p>
+                    </span>
+                    <span>
+                        <p>Federal Tax: </p>
+                        <p id="year4FedTax" class="futurePay">&nbsp;</p>
+                    </span>
+                    <span>
+                        <p>Medicare: </p>
+                        <p id="year4Medicare" class="futurePay">&nbsp;</p>
+                    </span>
+                    <span>
+                        <p>State Tax: </p>
+                        <p id="year4StateTax" class="futurePay">&nbsp;</p>
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="projectionContainer">
+                <p class="futureYear">In 5 years</p>
+                <div>
+                    <span>
+                        <p>Final Pay after taxes: </p>
+                        <p id="year5FinalPay" class="futurePay">&nbsp;</p>
+                    </span>
+                    <span>
+                        <p>Social Security: </p>
+                        <p id="year5SocSec" class="futurePay">&nbsp;</p>
+                    </span>
+                    <span>
+                        <p>Federal Tax: </p>
+                        <p id="year5FedTax" class="futurePay">&nbsp;</p>
+                    </span>
+                    <span>
+                        <p>Medicare: </p>
+                        <p id="year5Medicare" class="futurePay">&nbsp;</p>
+                    </span>
+                    <span>
+                        <p>State Tax: </p>
+                        <p id="year5StateTax" class="futurePay">&nbsp;</p>
+                    </span>
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+
+    </main>
+
+    <script>
+        //GET LOCAL TIME FOR GREETING
+        var date = new Date().getHours();
+        var timeText = document.querySelector('#timeText');
+
+        // IF STATEMENTS FOR DISPLAYING CURRENT TIME
+        if (date <= 11) {
+            timeText.textContent = "Good morning!";
+        } else if (date >= 12 && date <= 17) {
+            timeText.textContent = "Good afternoon!";
+        } else {
+            timeText.textContent = "Good evening!";
+        }
+    </script>
+
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+</body>
+
+</html>

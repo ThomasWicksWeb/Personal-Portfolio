@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Stats</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+    
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./css/bulma.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+
+<body>
+
+    <!--  Color band at top of screen  -->
+    <div class="colorBand">&nbsp;</div>
+
+    <!--  Nav Bar  -->
+
+    <nav class="navbar block" id="nav" role="navigation">
+        <div class="navbar-brand">
+
+            <a href="./index.html"><img src="./images/logolong4.png" class="logo" alt="Tesla Tracker"></a>
+        </div>
+
+        <a role="button" class="navbar-burger navbar-end" data-target="navMenu" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+
+        <div id="nav-responsive" class="navbar-end">
+            <div class="navbar-item">
+                <a target="_blank" href="https://twitter.com/Tesla"><i class="navbar-i-twitter is-size-4 navbar-item fab fa-twitter-square"></i></a>
+                <a target="_blank" href="https://www.instagram.com/teslamotors/"><i class="navbar-i-ig is-size-4 navbar-item fab fa-instagram"></i></a>
+                <a class="navbar-item" href="./index.html">Home</a>
+                <a class="navbar-item" href="./stats.html">Stats</a>
+                <a class="navbar-item" href="./about.html">About</a>
+                <a class="navbar-item" href="./contact.html">Contact</a>
+            </div>
+        </div>
+
+    </nav>
+
+    <!--  About  -->
+    <section class="tabs is-medium container is-centered">
+        <ul>
+            <li id="tab1" class="border-right is-active has-text-weight-semibold"><a id="MSBtn">Model S</a></li>
+            <li id="tab2" class='border-right has-text-weight-semibold'><a id="M3Btn">Model 3</a></li>
+            <li id="tab3" class='has-text-weight-semibold'><a id="MXBtn">Model X</a></li>
+            <!--            <li id="tab4" class=''><a id="MyBtn">Model Y</a></li>-->
+            <!--   href="#Model3Cont"    -->
+        </ul>
+    </section>
+
+    <section class="" id="ajaxSec"></section>
+
+    <section id="modelSCont" class="section" style="padding-top: 1rem;">
+        <div class="container box">
+            <div class="has-text-centered block is-size-3">April 2019 In-Progress Sales Report</div>
+            <hr>
+            <div class="is-centered columns">
+                <div class="column">
+                    <img src="./images/modelS.jpg" alt="Telsa Model S">
+                </div>
+
+                <div class="column columns is-mobile is-vcentered is-two-thirds">
+                    <div class="column border-right">
+                        <p class="has-text-centered"><strong>Month</strong></p>
+                        <ul class="has-text-centered">
+                            <li>January</li>
+                            <li>February</li>
+                            <li>March</li>
+                        </ul>
+                    </div>
+                    <div class="column border-right">
+                        <p class="has-text-centered"><strong>Units Sold</strong></p>
+                        <ul class="has-text-centered">
+                            <li>875</li>
+                            <li>800</li>
+                            <li>2,275</li>
+                        </ul>
+                    </div>
+                    <div class="column border-right">
+                        <p class="has-text-centered"><strong>Total Sold</strong></p>
+                        <ul class="has-text-centered">
+                            <li>875</li>
+                            <li>1,675</li>
+                            <li>3,950</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+
+                        <p class="has-text-centered no-wrap"><strong>Unit Deviation</strong><i title="Difference in units sold from the same month from the previous year." class="fas fa-question-circle tooltip" style="margin-left: 3px;"></i></p>
+                        <ul class="has-text-centered">
+                            <li>+75</li>
+                            <li>-325</li>
+                            <li>-1,100</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block has-text-centered">
+                <h4 class="is-size-4">Sales History</h4>
+            </div>
+
+            <div class="is-centered columns">
+                <div id="graphModelS"></div>
+            </div>
+
+        </div>
+        <script>
+            Highcharts.chart('graphModelS', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: 'Tesla Model S Monthly Sales, 2015-2018'
+                },
+                stackLabels: {
+                    enabled: true,
+                    style: {
+                        fontWeight: 'bold',
+                        color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                    }
+                },
+                subtitle: {
+                    text: 'Source: carsalesbase.com'
+                },
+                yAxis: {
+                    title: {
+                        text: 'Units Sold'
+                    }
+                },
+                xAxis: {
+                    allowDecimals: false,
+                    title: {
+                        text: 'Month'
+                    }
+                },
+                
+//                legend: {
+//                    layout: 'vertical',
+//                    align: 'right',
+//                    verticalAlign: 'middle'
+//                },
+                legend: {
+                    align: 'right',
+                    x: -30,
+                    verticalAlign: 'top',
+                    y: 25,
+                    floating: true,
+                    backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+                    borderColor: '#CCC',
+                    borderWidth: 1,
+                    shadow: false
+                },
+
+                plotOptions: {
+                    series: {
+                        label: {
+                            connectorAllowed: false
+                        },
+                        pointStart: 1,
+                        pointEnd: 12
+                    }
+                },
+                series: [{
+                    name: '2015',
+                    data: [2250, 2000, 1200, 1700, 1700, 1700, 1700, 1700, 1700, 1730, 1700, 3600]
+                }, {
+                    name: '2016',
+                    data: [850, 1550, 3990, 800, 1200, 3700, 1954, 2852, 4350, 925, 1400, 5850]
+                }, {
+                    name: '2017',
+                    data: [900, 1750, 3450, 1125, 1620, 2350, 1425, 2150, 4860, 1120, 1335, 4975]
+                }, {
+                    name: '2018',
+                    data: [800, 1125, 3375, 1250, 1520, 2750, 1200, 2652, 3750, 1350, 2750, 3250]
+                }],
+                responsive: {
+                    rules: [{
+                        condition: {
+                            maxWidth: 500
+                        },
+                        chartOptions: {
+                            legend: {
+                                layout: 'horizontal',
+                                align: 'center',
+                                verticalAlign: 'bottom'
+                            }
+                        }
+                    }]
+                }
+
+            });
+        </script>
+    </section>
+    
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Tesla Tracker</strong> by <a href="https://thomaswicks.com">Thomas Wicks</a>.
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

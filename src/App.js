@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import TopBar from './components/TopBar';
+import MainSplash from './components/MainSplash';
+import AboutMe from './components/AboutMe';
+import ClientWork from './components/ClientWork';
+import PersonalProjects from './components/PersonalProjects';
 
 function App() {
+
+const currentHourOfDay = new Date().getHours();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <TopBar currentHourOfDay={ currentHourOfDay } />
+      <MainSplash currentHourOfDay={ currentHourOfDay } />
+      <AboutMe />
+      <ClientWork />
+      <PersonalProjects />
     </div>
   );
 }

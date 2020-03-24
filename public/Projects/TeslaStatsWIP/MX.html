@@ -1,0 +1,140 @@
+<!-- Data Template Model X  -->
+<section id="modelXCont" class="section" style="padding-top: 1rem;">
+    <div class="container box">
+        <div class="has-text-centered block is-size-3">April 2019 In-Progress Sales Report</div>
+        <hr>
+        <div class="is-centered columns">
+            <div class="column">
+                <img src="./images/modelX.jpg" alt="Telsa Model S">
+            </div>
+
+            <div class="column columns is-vcentered is-two-thirds">
+                <div class="column border-right">
+                    <p class="has-text-centered"><strong>Month</strong></p>
+                    <ul class="has-text-centered">
+                        <li>January</li>
+                        <li>February</li>
+                        <li>March</li>
+                    </ul>
+                </div>
+                <div class="column border-right">
+                    <p class="has-text-centered"><strong>Units Sold</strong></p>
+                    <ul class="has-text-centered">
+                        <li>950</li>
+                        <li>1,100</li>
+                        <li>2,175</li>
+                    </ul>
+                </div>
+                <div class="column border-right">
+                    <p class="has-text-centered"><strong>Total Sold</strong></p>
+                    <ul class="has-text-centered">
+                        <li>950</li>
+                        <li>2,050</li>
+                        <li>4,225</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <p class="has-text-centered no-wrap"><strong>Unit Deviation</strong><i title="Difference in units sold from the same month from the previous year." class="fas fa-question-circle tooltip" style="margin-left: 3px;"></i></p>
+                    <ul class="has-text-centered">
+                        <li>+250</li>
+                        <li>+125</li>
+                        <li>-650</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="block has-text-centered">
+            <h4 class="is-size-4">Sales History</h4>
+        </div>
+
+        <div class="is-centered columns">
+            <div id="graphModelX"></div>
+        </div>
+
+    </div>
+    <script>
+        Highcharts.chart('graphModelX', {
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Tesla Model X Monthly Sales, 2017-2018'
+            },
+            stackLabels: {
+                enabled: true,
+                style: {
+                    fontWeight: 'bold',
+                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                }
+            },
+            legend: {
+                align: 'right',
+                x: -30,
+                verticalAlign: 'top',
+                y: 25,
+                floating: true,
+                backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+                borderColor: '#CCC',
+                borderWidth: 1,
+                shadow: false
+            },
+            subtitle: {
+                text: 'Source: carsalesbase.com'
+            },
+            yAxis: {
+                title: {
+                    text: 'Units Sold'
+                }
+            },
+            xAxis: {
+                allowDecimals: false,
+                title: {
+                    text: 'Month'
+                }
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'middle'
+            },
+
+            plotOptions: {
+                series: {
+                    label: {
+                        connectorAllowed: false
+                    },
+                    pointStart: 1,
+                    pointEnd: 12
+                }
+            },
+            series: [{
+                name: '2015',
+                data: [null, null, null, null, null, null, null, null, 6, 4, 5, 199]
+            }, {
+                name: '2016',
+                data: [270, 270, 1860, 795, 1600, 2145, 750, 1833, 3200, 725, 900, 3875]
+            }, {
+                name: '2017',
+                data: [750, 800, 2750, 715, 1730, 2200, 1650, 1575, 3120, 850, 1875, 3300]
+            }, {
+                name: '2018',
+                data: [700, 975, 2825, 1025, 1450, 2550, 1325, 2750, 3975, 1225, 3200, 4100]
+            }],
+            responsive: {
+                rules: [{
+                    condition: {
+                        maxWidth: 500
+                    },
+                    chartOptions: {
+                        legend: {
+                            layout: 'horizontal',
+                            align: 'center',
+                            verticalAlign: 'bottom'
+                        }
+                    }
+                }],
+            }
+
+        });
+    </script>
