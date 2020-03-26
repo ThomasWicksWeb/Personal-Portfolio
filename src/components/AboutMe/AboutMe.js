@@ -2,19 +2,14 @@ import React from 'react';
 import classnames from 'classnames';
 import styles from './AboutMe.module.scss';
 import Emoji from '../Misc/Emoji/Emoji';
+import SectionHeader from '../Misc/SectionHeader/SectionHeader';
 
 const AboutMe = () => {
 
     return(
         <div id="aboutMe" className={classnames("tint", styles.sectionPadding)}>
             <div className="container ">
-                <div className="bannerTextContainer">
-                    <h3 className="title is-size-2 sectionHeader">About Me
-                        <Emoji label="Graduation Cap"
-                                emoji="🎓"
-                        />
-                    </h3>
-                </div>
+                <SectionHeader HeaderText="About Me" emoji="🎓" label="Graduation cap" />
                 <div className="smallGridParent">
                     <div className={classnames("is-vcentered projectsSmallGrid", styles.AboutMeColumns)}>
                         <div>

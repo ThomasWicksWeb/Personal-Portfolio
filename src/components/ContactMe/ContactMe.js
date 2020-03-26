@@ -6,24 +6,23 @@ const ContactMe = () => {
         <section id="contactMe" className="section">
             <div className="container">
             <SectionHeader emoji="✉️" label="Folder emoji" HeaderText="Contact Me" />
-
                 <form className="form" action="https://formspree.io/thomaswicks.ch@gmail.com" method="POST">
                     <div className="field">
-                        <label for="name" className="label is-size-5">Name</label>
+                        <label htmlFor="name" className="label is-size-5">Name</label>
                         <div className="control">
                             <input id="name" className="input inputMax" type="text" placeholder="Your name" name="name" />
                         </div>
                     </div>
 
                     <div className="field">
-                        <label for="email" className="label is-size-5">Email</label>
+                        <label htmlFor="email" className="label is-size-5">Email</label>
                         <div className="control">
                             <input id="email" name="email" className="input inputMax" type="email" placeholder="Your email" />
                         </div>
                     </div>
 
                     <div className="field">
-                        <label for="message" className="label is-size-5">Message</label>
+                        <label htmlFor="message" className="label is-size-5">Message</label>
                         <div className="control">
                             <textarea id="message" className="textarea" placeholder="Hey there" name="message"></textarea>
                         </div>
