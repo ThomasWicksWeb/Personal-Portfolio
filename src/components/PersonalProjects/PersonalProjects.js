@@ -1,6 +1,6 @@
 import React from 'react';
 import { personalProjectsLarge, personalProjectsSmall }  from '../../data/dataPersonalProjects';
-import ExternalLink from '../Misc/ExternalLink';
+import ExternalLink from '../Misc/ExternalLink/ExternalLink';
 
 
 

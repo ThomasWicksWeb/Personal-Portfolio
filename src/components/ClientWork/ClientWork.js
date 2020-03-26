@@ -1,6 +1,6 @@
 import React from 'react';
 import ClientsProjects from '../../data/dataClientsProjects';
-import ExternalLink from '../Misc/ExternalLink';
+import ExternalLink from '../Misc/ExternalLink/ExternalLink';
 
 const LargeClientsProjectList = ClientsProjects.map(item => {
     return(

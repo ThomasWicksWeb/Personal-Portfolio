@@ -517,21 +517,6 @@ img {
     font-size: 1.5rem;
 }
 
-.paragraph {
-    font-size: 1rem;
-    font-weight: 400;
-}
-
-.githubBtn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-
-    & a i {
-        align-self: center;
-    }
-}
 
 .projectIconRow a {
     margin-top: 5px;
@@ -770,16 +755,6 @@ footer {
         transform: translateY(-15px);
     }
 }
-
-@keyframes frankSpin {
-    0% {}
-
-    100% {
-        margin-left: -10px;
-        transform: scale(2.5);
-    }
-}
-
 
 /* ==========================================
 =============== MEDIA QUERIES ===============
