@@ -24,7 +24,7 @@ class Slider extends Component {
         };
     }
 
-    darken = e => {
+    darken = () => {
         // Apply darkmode to text
         document.querySelectorAll('p, a, span, label, strong, h3, .certWrapper > *, .is-size-3, .is-size-4, .is-size-5, .is-size-6, .projectTitle').forEach(e => e
           .classList.toggle('darkText'));
@@ -39,9 +39,9 @@ class Slider extends Component {
         // Strengthens orange colors on the page behind text
         document.querySelectorAll('.bannerText, .orangeBackground, .text-highlight').forEach(e => e.classList.toggle(
           'bannerTextDark'));
-        }
-
-
+        // small project grid background
+        document.querySelectorAll('.placeholderForDarkModeBG').forEach(e => e.classList.toggle('smallGridDarkBG'));
+      }
 }
 
 export default Slider;

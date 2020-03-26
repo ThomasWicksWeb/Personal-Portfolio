@@ -4,7 +4,7 @@ const personalProjectsLarge = [{
     img: "./images/WebDevResources-min.jpg",
     imgAlt: "Web Dev Resources Thumbnail",
     live: "https://www.WebDevResources.info",
-    github: "https://github.com/ThomasWicksWeb/WebDevResources",
+    github: "https://github.com/ThomasWicksWeb/Web-Dev-Resources-React",
     techUsed: "React, Bulma"
 }]
 
