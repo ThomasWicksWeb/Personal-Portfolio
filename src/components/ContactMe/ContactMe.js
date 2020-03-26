@@ -1,13 +1,12 @@
 import React from 'react';
-import Emoji from '../Misc/Emoji/Emoji'
+import SectionHeader from '../Misc/SectionHeader/SectionHeader'
 
 const ContactMe = () => {
     return(
         <section id="contactMe" className="section">
             <div className="container">
-                <div className="bannerTextContainer">
-                    <h3 className="title is-size-2 sectionHeader">Contact Me <Emoji label="Email emoji" emoji="✉️" /></h3>
-                </div>
+            <SectionHeader emoji="✉️" label="Folder emoji" HeaderText="Contact Me" />
+
                 <form className="form" action="https://formspree.io/thomaswicks.ch@gmail.com" method="POST">
                     <div className="field">
                         <label for="name" className="label is-size-5">Name</label>

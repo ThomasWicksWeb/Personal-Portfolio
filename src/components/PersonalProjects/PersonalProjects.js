@@ -1,8 +1,7 @@
 import React from 'react';
 import { personalProjectsLarge, personalProjectsSmall }  from '../../data/dataPersonalProjects';
 import ExternalLink from '../Misc/ExternalLink/ExternalLink';
-
-
+import SectionHeader from '../Misc/SectionHeader/SectionHeader';
 
 const PPListLarge = personalProjectsLarge.map(item => {
     return(
@@ -63,11 +62,7 @@ const PPListSmall = personalProjectsSmall.map(item => {
 const PersonalProjects = () => {
     return(
         <section className="section">
-            <div>
-                <div className="container">
-                    <h3 className="sectionHeader is-size-2 helpingPaddingLeft">My Projects <span role="img" aria-label="Folder emoji">📂</span></h3>
-                </div>
-            </div>
+            <SectionHeader emoji="📂" label="Folder emoji" HeaderText="My Projects" />
             <div className="largeGridParent">
                 <div className="projectsLargeGrid section">
                     { PPListLarge }

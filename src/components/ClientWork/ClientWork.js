@@ -1,6 +1,7 @@
 import React from 'react';
 import ClientsProjects from '../../data/dataClientsProjects';
 import ExternalLink from '../Misc/ExternalLink/ExternalLink';
+import SectionHeader from '../Misc/SectionHeader/SectionHeader';
 
 const LargeClientsProjectList = ClientsProjects.map(item => {
     return(
@@ -35,11 +36,7 @@ const LargeClientsProjectList = ClientsProjects.map(item => {
 const ClientWork = () => {
     return(
         <section className="section">
-            <div className="bannerTextContainer">
-                <div className="bannerTextContainer container">
-                    <h3 className="title is-size-2 helpingPaddingLeft sectionHeader">Client Work <span role="img" aria-label="Folder emoji">📁</span></h3>
-                </div>
-            </div>
+            <SectionHeader emoji="📁" label="Folder emoji" HeaderText="Client Work" />
 
             <div className="largeGridParent">
                 <div className="projectsLargeGrid">
