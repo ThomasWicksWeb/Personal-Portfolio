@@ -6,8 +6,7 @@ const InternalLink = ({text, href, emoji}) => {
             rel="noopener noreferrer"
             href={ href }
             className="linkContactme noWrap">
-                <span
-                    className="borderMarker"><strong>{ text }</strong> { emoji }</span></a>
+                <span className="borderMarker"><strong>{ text }</strong> { emoji }</span></a>
     )
 }
 

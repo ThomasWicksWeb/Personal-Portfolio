@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
+import styles from './Slider.module.scss';
+import classnames from 'classnames';
 
 class Slider extends Component {
     
-    // state = {
-    //     currentHourOfDay: new Date().getHours()
-    // }
-
     render(){
         return(
             <div>
-                <label id="toggleSliderDOM" className="switch">
-                    <input id="darkModeSliderBtn" ref="darkModeSliderBtn" type="checkbox" onClick={this.darken} />
-                    <span className="slider round">&nbsp;</span>
+                <label className={ styles.switch }>
+                    <input ref="darkModeSliderBtn" type="checkbox" onClick={this.darken} />
+                    <span className={ classnames(styles.round, styles.slider) }>&nbsp;</span>
                 </label>
             </div>
         )
@@ -29,6 +27,7 @@ class Slider extends Component {
         document.querySelectorAll('p, a, span, label, strong, h3, .certWrapper > *, .is-size-3, .is-size-4, .is-size-5, .is-size-6, .projectTitle').forEach(e => e
           .classList.toggle('darkText'));
         // Border to logo
+        document.querySelectorAll('#logo').forEach(e => e.classList.toggle('logoDarkLrg'));
         document.querySelectorAll('#logo').forEach(e => e.classList.toggle('logoDark'));
         // Border to border marker
         document.querySelectorAll('.borderMarker').forEach(e => e.classList.toggle('borderMarkerDark'));
@@ -42,6 +41,7 @@ class Slider extends Component {
         // small project grid background
         document.querySelectorAll('.placeholderForDarkModeBG').forEach(e => e.classList.toggle('smallGridDarkBG'));
       }
+
 }
 
 export default Slider;

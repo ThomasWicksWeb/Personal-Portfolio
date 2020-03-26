@@ -73,8 +73,8 @@ const PersonalProjects = () => {
                     { PPListLarge }
                 </div>
             </div>
-            <div class="smallGridParent">
-                <div class="section projectsSmallGrid">
+            <div className="smallGridParent">
+                <div className="section projectsSmallGrid">
                     { PPListSmall }
                 </div>
             </div>
