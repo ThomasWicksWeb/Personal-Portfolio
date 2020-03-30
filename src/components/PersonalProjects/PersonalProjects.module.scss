@@ -1,54 +1,32 @@
-.projectIconRow {
-    display: flex;
-    align-content: center;
-    justify-content: flex-start;
-
-    & > * {
-        padding: .3rem 1rem !important;
-    }
-}
-
-.projectTextContainer {
-    background-color: #f5f5f5;
-    padding: 1rem;
-    margin-top: -10px;
-
-    & > * {
-        margin: 4px 0;
-    }
-}
-
-.projectTitle {
-    font-family: 'Muli', sans-serif;
-    font-size: 1.5rem;
-}
-
-
-.projectIconRow a {
-    margin-top: 5px;
-}
-
-.myBox {
-    padding: 1rem;
-    border-radius: 20px; 
-    background-color: #f5f5f5;
-}
-
-.tint {
+.personalProjectsSection {
     background-color: #f8f8f8;
+    // Color to change to on dark mode -- #1f2b46
 }
 
-.dottedBG {
-    background-image: url("./images/dottedBackground.png");
+article {
+    background-color: white; // Change to -- #1f2b46 -- in dark mode
+    border-radius: 20px;
+    padding: 15px;
+    background-image: url('./images/dottedBackground.png');
 }
 
-.imgContainer {
-    max-width: 70%;
+img {
+    width: 100%;
+    border-radius: 20px;
 }
-.projectContainer,
-.projectContainer div {
-    background-color: white;
+
+.textContainer {
+
+    & > * {
+        padding: 0 0 6px 0;
+    }
+
+    & h2 {
+        font-family: 'Muli', sans-serif;
+        font-size: 1.5rem;
+    }
 }
+
 .largeGridParent {
     width: 100%;
     max-width: 1100px;
@@ -56,11 +34,13 @@
     padding: 0 20px;
     box-sizing: border-box;
 }
+
 .projectsLargeGrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 3rem;
 }
+
 .smallGridParent {
     width: 100%;
     max-width: 1100px;
@@ -68,31 +48,9 @@
     padding: 0 20px;
     box-sizing: border-box;
 }
+
 .projectsSmallGrid {
     display: grid !important;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 3rem !important;
-}
-.projectsSmallGrid article {
-    background-color: white;
-}
-.projectsSmallGrid img {
-    border-radius: 10px;
-}
-
-.roundedCorners {
-    border-radius: 15px;
-}
-
-@media only screen and (max-width: 568px) {
-    .footerIcons {
-        display: flex;
-        flex-direction: column !important;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .footerIcons > * {
-        margin: .5rem 0;
-    }
 }

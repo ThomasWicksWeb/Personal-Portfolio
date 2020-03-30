@@ -5,7 +5,8 @@ const projectsLarge = [
         img: "./images/DotW-min.jpg",
         imgAlt: "Drip on the Wall Thumbnail",
         live: "https://heuristic-johnson-ea569b.netlify.com/",
-        github: "https://github.com/ThomasWicksWeb/DripOnTheWall"
+        github: "https://github.com/ThomasWicksWeb/DripOnTheWall",
+        techUsed: "Bulma"
     }
 ]
 

@@ -3,6 +3,7 @@
 ============= */
 
 $darkModeRed: rgb(229, 66, 66);
+$darkestBlue: #1f2b46;
 
 * {
     padding: 0;
@@ -147,6 +148,132 @@ img {
     margin-bottom: 0;
 }
 
+
+// .bannerTextSection.section {
+//     padding-bottom: 0;
+// }
+
+// .bannerText {
+//     font-size: 1.6rem;
+//     padding: 1rem 2rem;
+//     color: #333;
+//     margin: 1rem 0 2rem 2%;
+//     background-color: rgba(255, 147, 0, 0.5);
+
+//     &Container {
+//         display: flex;
+//         width: 100%;
+//         justify-content: flex-start;
+//         align-items: center;
+//     }
+// }
+
+// .heading-secondary {
+//     font-size: 1.25rem;
+//     font-weight: 400;
+//     text-transform: uppercase;
+// }
+
+// .button {
+//     margin-top: .5rem;
+// }
+
+
+// .orangeBackground {
+//     background-color: rgba(255, 147, 0, 0.5);
+//     display: inline-block;
+//     padding: .1rem 1rem;
+//     margin-top: .12rem;
+// }
+
+// .is-size-5 {
+//     font-size: 1.18rem !important;
+// }
+
+// .text-highlight {
+//     color: black;
+//     background-color: rgba(255, 147, 0, 0.5);
+//     padding: 2px 4px;
+//     text-align: center;
+
+//     &:hover {
+//         color: white;
+//         background-color: rgba(41, 152, 255, 0.5);
+//         transition: all .2s;
+//     }
+// }
+
+// .borderMarker {
+//     position: relative;
+//     color: #333;
+//     padding: 4px 8px;    
+// }
+
+// .zFix {
+//     z-index: 0;
+//     & > * {
+//         margin-left: 6px;
+//     }
+// }
+
+// .borderMarker::after {
+//     content: "";
+//     position: absolute;
+//     z-index: -1;
+//     top: 70%;
+//     left: -0.1px;
+//     right: -0.1px;
+//     bottom: 0;
+//     transition: top .1s ease-in-out;
+//     background-color: rgba(255, 147, 0, 0.5);
+// }
+
+// .borderMarker:hover::after {
+//     top: 0;
+// }
+
+// .noWrap {
+//     display: inline-block;
+// }
+
+// .link {
+//     text-decoration: none;
+//     color: inherit;
+// }
+
+// .project-text-container {
+//     background-color: #f5f5f5;
+//     padding: 1rem;
+//     margin-top: -10px;
+
+//     & > * {
+//         margin: 4px 0;
+//     }
+// }
+
+// .projectTitle {
+//     font-family: 'Muli', sans-serif;
+//     font-size: 1.5rem;
+// }
+
+
+// .projectIconRow a {
+//     margin-top: 5px;
+// }
+
+// .myBox {
+//     padding: 1rem;
+//     border-radius: 20px; 
+//     margin-bottom: 0;
+// }
+
+
+// .myBox {
+//     padding: 1rem;
+//     border-radius: 20px; 
+//     & img {
+//     margin-bottom: 0;
+// }
 /* ====================
     Dark Mode Styles
 ===================== */

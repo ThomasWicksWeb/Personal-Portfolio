@@ -5,6 +5,10 @@ import classnames from 'classnames';
 // import './DarkStyles.module.scss';
 
 class Slider extends Component {
+
+    state = {
+        darkMode: false
+    }
     
     render(){
         return(
@@ -21,6 +25,7 @@ class Slider extends Component {
         if (this.props.currentHourOfDay <= 5 || this.props.currentHourOfDay >= 20) {
             this.darken();
             this.refs.darkModeSliderBtn.checked = true;
+            this.setState({darkMode: true})
         };
     }
 
@@ -34,7 +39,7 @@ class Slider extends Component {
         // Border to border marker
         document.querySelectorAll('.borderMarker').forEach(e => e.classList.toggle('borderMarkerDark'));
         // Apply dark background color
-        document.querySelectorAll('body, .certWrapper, .textContainer').forEach(e => e.classList.toggle('darkBG'));
+        document.querySelectorAll('body, .textContainer').forEach(e => e.classList.toggle('darkBG'));
         // Off-shade footer BG
         document.querySelectorAll('footer, .tint, .projectContainer, .projectContainer div, .column').forEach(e => e.classList.toggle('darkBGLight'));
         // Strengthens orange colors on the page behind text
@@ -50,6 +55,11 @@ class Slider extends Component {
         // WICKS logo
         document.querySelectorAll('.logoLight').forEach(e => e.classList.toggle('logoDark'));
 
+        if(this.state.darkMode == true){
+            this.setState({darkMode: false});
+        } else {
+            this.setState({darkMode: true});
+        }
 
       }
 

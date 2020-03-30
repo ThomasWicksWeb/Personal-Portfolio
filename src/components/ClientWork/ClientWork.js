@@ -8,17 +8,16 @@ import styles from './ClientWork.module.scss';
 
 const LargeClientsProjectList = ClientsProjects.map(item => {
     return(
-        <div key={ item.title } className={ classnames("", styles.roundedCorners) }>
-            <div className={classnames("myBox projectContainer", styles.myBox, styles.projectContainer, styles.dottedBG)}>
+        <article key={ item.title } className={ classnames("roundedCorners") }>
                 <a href={item.live} target="_blank" rel="noopener noreferrer" className="link">
                     <img src={ item.img } alt={ item.imgAlt }
                         title="Drip on the Wall WIP Thumbnail" />
                 </a>
-                <div className={ classnames("textContainer", styles.projectTextContainer, styles.dottedBG) }>
-                    <h2 className={ classnames("projectTitle", styles.projectTitle) }><strong>{ item.title }</strong></h2>
-                    <p className="is-size-6">{ item.desc }</p>
+                <div className={ classnames("", styles.textContainer) }>
+                    <h2 className={ classnames("") }><strong>{ item.title }</strong></h2>
+                    <p className="is-size-5">{ item.desc }</p>
                     <p className="is-size-6">Technologies Used: <strong>{ item.techUsed }</strong></p>
-                    <p className={ classnames("is-size-6", styles.projectIconRow, styles.footerIcons) }>
+                    <p className={ classnames("is-size-6") }>
                     <ExternalLink 
                         href={ item.live }
                         text={ "View Project" }
@@ -31,8 +30,7 @@ const LargeClientsProjectList = ClientsProjects.map(item => {
                     />
                     </p>
                 </div>
-            </div>
-        </div>
+        </article>
     )
 });
 
