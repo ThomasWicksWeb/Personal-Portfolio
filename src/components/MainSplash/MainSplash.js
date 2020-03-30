@@ -5,14 +5,14 @@ import classnames from 'classnames';
 import styles from './MainSplash.module.scss';
 import ExternalLink from 'components/Misc/ExternalLink/ExternalLink';
 
-const MainSplash = (props) => {
+const MainSplash = ({currentHourOfDay}) => {
 
     const GetGreeting = () => {
-        if (props.hourOfTheDay <= 2) {
+        if (currentHourOfDay <= 2) {
           return("🌅 Good (super early) morning, I'm");
-          } else if (props.hourOfTheDay >= 3 && props.hourOfTheDay <= 11) {
+          } else if (currentHourOfDay >= 3 && currentHourOfDay <= 11) {
               return("🌅 Good morning, I'm");
-          } else if (props.hourOfTheDay >= 12 && props.hourOfTheDay <= 17) {
+          } else if (currentHourOfDay >= 12 && currentHourOfDay <= 17) {
               return("☀️ Good afternoon, I'm");
           } else {
               return("🌇 Good evening, I'm");
