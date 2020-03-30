@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import styles from './Slider.module.scss';
 import classnames from 'classnames';
 
+// import './DarkStyles.module.scss';
+
 class Slider extends Component {
     
     render(){
@@ -24,22 +26,31 @@ class Slider extends Component {
 
     darken = () => {
         // Apply darkmode to text
-        document.querySelectorAll('p, a, span, label, strong, h3, .certWrapper > *, .is-size-3, .is-size-4, .is-size-5, .is-size-6, .projectTitle').forEach(e => e
-          .classList.toggle('darkText'));
+        // document.querySelectorAll('p, a, span, label, strong, h3, .certWrapper > *, .is-size-3, .is-size-4, .is-size-5, .is-size-6, .projectTitle').forEach(e => e
+        //   .classList.toggle('darkText'));
         // Border to logo
-        document.querySelectorAll('#logo').forEach(e => e.classList.toggle('logoDarkLrg'));
-        document.querySelectorAll('#logo').forEach(e => e.classList.toggle('logoDark'));
+        // document.querySelectorAll('#logoID').forEach(e => e.classList.toggle('logoDark'));
+        // document.querySelectorAll('#logo').forEach(e => e.classList.toggle('logoDark'));
         // Border to border marker
         document.querySelectorAll('.borderMarker').forEach(e => e.classList.toggle('borderMarkerDark'));
         // Apply dark background color
-        document.querySelectorAll('body, .certWrapper, .text-container').forEach(e => e.classList.toggle('darkBG'));
+        document.querySelectorAll('body, .certWrapper, .textContainer').forEach(e => e.classList.toggle('darkBG'));
         // Off-shade footer BG
         document.querySelectorAll('footer, .tint, .projectContainer, .projectContainer div, .column').forEach(e => e.classList.toggle('darkBGLight'));
         // Strengthens orange colors on the page behind text
-        document.querySelectorAll('.bannerText, .orangeBackground, .text-highlight').forEach(e => e.classList.toggle(
-          'bannerTextDark'));
+        document.querySelectorAll('.bannerText, .orangeBackground, .textHighlight, .text-highlight').forEach(e => e.classList.toggle('bannerTextDark'));
         // small project grid background
-        document.querySelectorAll('.placeholderForDarkModeBG').forEach(e => e.classList.toggle('smallGridDarkBG'));
+        document.querySelectorAll('.darkerBG').forEach(e => e.classList.toggle('darkmodeBGDark'));
+
+
+
+        // All general text on the page
+        document.querySelectorAll('p, a, span, label, strong, h3, .is-size-3, .is-size-4, .is-size-5, .is-size-6, .projectTitle').forEach(e => e.classList.toggle('darkText'));
+
+        // WICKS logo
+        document.querySelectorAll('.logoLight').forEach(e => e.classList.toggle('logoDark'));
+
+
       }
 
 }

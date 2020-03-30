@@ -7,6 +7,8 @@ import PersonalProjects from './components/PersonalProjects/PersonalProjects';
 import ContactMe from './components/ContactMe/ContactMe'
 import AppFooter from './components/Footer/AppFooter'
 
+import './style.scss';
+
 function App() {
 
 const currentHourOfDay = new Date().getHours();

@@ -1,0 +1,101 @@
+.projectIconRow {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+
+    &>* {
+        padding: .3rem 1rem !important;
+    }
+}
+
+.projectTextContainer {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    margin-top: -10px;
+
+    &>* {
+        margin: 4px 0;
+    }
+}
+
+.projectTitle {
+    font-family: 'Muli', sans-serif;
+    font-size: 1.5rem;
+}
+
+
+.projectIconRow a {
+    margin-top: 5px;
+}
+
+.myBox {
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: #f5f5f5;
+}
+
+.dottedBG {
+    background-image: url("./images/dottedBackground.png");
+}
+
+.imgContainer {
+    max-width: 70%;
+}
+
+.projectContainer,
+.projectContainer div {
+    background-color: white;
+}
+
+.largeGridParent {
+    width: 100%;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.projectsLargeGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 3rem;
+}
+
+.smallGridParent {
+    width: 100%;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.projectsSmallGrid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 3rem !important;
+}
+
+.projectsSmallGrid article {
+    background-color: white;
+}
+
+.projectsSmallGrid img {
+    border-radius: 10px;
+}
+
+.roundedCorners {
+    border-radius: 15px;
+}
+
+@media only screen and (max-width: 568px) {
+    .footerIcons {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footerIcons>* {
+        margin: .5rem 0;
+    }
+}

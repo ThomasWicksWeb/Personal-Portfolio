@@ -1,0 +1,13 @@
+.contactMe {
+    background-image: url('./images/dottedBackground.png');
+}
+
+.field {
+    margin: 0 auto;
+    max-width: 40rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgba(51, 51, 51, 0.8) !important;
+}

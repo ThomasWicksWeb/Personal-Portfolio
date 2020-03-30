@@ -1,0 +1,30 @@
+footer {
+    margin-bottom: 0 !important;
+}
+
+.minH {
+    align-self: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: row !important;
+    padding: .3rem 1rem !important;
+
+    & i {
+        align-self: stretch;
+        ;
+    }
+}
+
+.redHeart {
+    color: #eb5354;
+}
+
+.negMarginLeft {
+    margin-left: -5px;
+}
+
+.footerIcons > * {
+    letter-spacing: 1px;
+    padding: .3rem 1rem;
+}

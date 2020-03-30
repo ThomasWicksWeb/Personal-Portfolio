@@ -7,7 +7,7 @@ import SectionHeader from '../Misc/SectionHeader/SectionHeader';
 const AboutMe = () => {
 
     return(
-        <div id="aboutMe" className={classnames("tint", styles.sectionPadding)}>
+        <div id="aboutMe" className={classnames("tint", styles.tint, styles.sectionPadding)}>
             <div className="container ">
                 <SectionHeader HeaderText="About Me" emoji="🎓" label="Graduation cap" />
                 <div className="smallGridParent">

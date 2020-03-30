@@ -1,0 +1,128 @@
+.timeText {
+    margin-bottom: -.5rem;
+}
+
+.myName {
+    margin: .5rem 0 .5rem 0;
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+}
+
+.introSection {
+    background-image: url("./images/dottedBackground.png");
+    min-height: 100vh;
+}
+
+.viewportHeight {
+    height: calc(100vh - 4px);
+}
+
+.cheers {
+    animation: cheers 3s linear infinite both;
+    display: inline-block;
+}
+
+.zFix {
+    z-index: 0;
+    & > * {
+        margin-left: 6px;
+    }
+}
+
+.icons > * {
+    letter-spacing: 1px;
+    padding: .3rem 1rem;
+}
+
+.alignment {
+    height: calc(100vh - 4px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: -5rem;
+    margin-bottom: 4rem;
+}
+
+.headerParaCont p {
+    margin: .3rem 0;
+    padding-right: .5rem;
+}
+
+
+.minH {
+    align-self: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: row !important;
+    padding: .3rem 1rem !important;
+
+    & i {
+        align-self: stretch;;
+    }
+}
+
+
+@keyframes cheers {
+    0% {}
+
+    15% {
+        transform: scale(1.25);
+    }
+
+    30% {
+        transform: rotate(15deg) scale(1.25);
+    }
+
+    45% {
+        transform: rotate(0deg) scale(1.25);
+    }
+
+    60% {
+        transform: rotate(-15deg) scale(1.25);
+    }
+
+    80% {
+        transform: rotate(0deg) scale(1.25);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.arrowBounce {
+    position: absolute;
+    animation: bounce 2s infinite;
+    bottom: .05rem !important;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+@media only screen and (max-width: 568px) {
+
+    .introSection {
+        padding-top: 5rem;
+        min-height: calc(100vh + 5rem);
+    }
+
+}

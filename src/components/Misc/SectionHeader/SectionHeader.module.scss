@@ -1,0 +1,43 @@
+// .sectionHeader {
+//     margin: .5rem 0 .5rem 0;
+//     font-family: 'Muli', sans-serif;
+//     font-weight: 700;
+//     padding-left: 25px;
+
+//     &:not(:last-child) {
+//         padding-bottom: -10rem !important;
+//     }
+    
+// }
+
+.bannerTextContainer {
+
+    .sectionHeader {
+        margin: .5rem 0 .5rem 0;
+        font-family: 'Muli', sans-serif;
+        font-weight: 700;
+        padding-left: 25px;
+    
+        &:not(:last-child) {
+            padding-bottom: -10rem !important;
+        }
+        
+    }
+
+    @media only screen and (max-width: 568px) {
+        .bannerTextContainer {
+            align-items: center;
+            justify-content: center;
+            padding-left: 0;
+        }
+    }
+
+}
+
+// @media only screen and (max-width: 568px) {
+//     .bannerTextContainer {
+//         align-items: center;
+//         justify-content: center;
+//         padding-left: 0;
+//     }
+// }

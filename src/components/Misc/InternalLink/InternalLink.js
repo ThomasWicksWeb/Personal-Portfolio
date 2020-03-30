@@ -1,4 +1,6 @@
 import React from 'react';
+import classnames from 'classnames';
+import styles from './InternalLink.module.scss';
 
 const InternalLink = ({text, href, emoji}) => {
     return(
@@ -6,7 +8,7 @@ const InternalLink = ({text, href, emoji}) => {
             rel="noopener noreferrer"
             href={ href }
             className="linkContactme noWrap">
-                <span className="borderMarker"><strong>{ text }</strong> { emoji }</span></a>
+                <span className={ classnames("borderMarker", styles.borderMarker) }><strong>{ text }</strong> { emoji }</span></a>
     )
 }
 

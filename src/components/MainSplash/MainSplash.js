@@ -1,5 +1,9 @@
 import React from 'react';
-import InternalLink from '../Misc/InternalLink';
+import InternalLink from '../Misc/InternalLink/InternalLink';
+import Emoji from '../Misc/Emoji/Emoji';
+import classnames from 'classnames';
+import styles from './MainSplash.module.scss';
+import ExternalLink from 'components/Misc/ExternalLink/ExternalLink';
 
 const MainSplash = (props) => {
 
@@ -16,37 +20,45 @@ const MainSplash = (props) => {
     }
 
     return(
-        <section id="introSection" className="section viewportHeight">
-            <div className="container alignment headerParaCont">
+        <section id="introSection"  className={ classnames("section", styles.introSection, styles.viewportHeight) }>
+            <div className={ classnames("container", styles.alignment, styles.headerParaCont) }>
                 <p className="is-size-3" id="timeText">{ GetGreeting() }</p>
-                <p id="myName" className="is-size-1"><strong>Thomas Wicks</strong> <span className="cheers">🎉</span></p>
+                <p className={ classnames("is-size-1", styles.myName)}><strong>Thomas Wicks</strong> <span className={ styles.cheers }><Emoji emoji="🎉" label="Cheers!" /></span></p>
                 <p className="is-size-5 has-text-centered">a software developer from the little-known state of New York.</p>
                 <p className="is-size-5">Down below are some of my projects</p>
-                <p className="is-size-5 zFix">Alternatively, you can view my 
+                <p className={ classnames("is-size-5", styles.zFix) }>Alternatively, you can view my 
                     <InternalLink 
-                        href={ "https://thomaswicks.com/MyResume/ThomasWicksResume.pdf" }
-                        text={ "résumé" }
-                        emoji={ "📝" }
+                        href="https://thomaswicks.com/MyResume/ThomasWicksResume.pdf"
+                        text="résumé"
+                        emoji="📝"
                     />
                 </p>
-                <p className="is-size-5 zFix">If you're looking to get in touch, 
+                <p className={ classnames("is-size-5", styles.zFix) }>If you're looking to get in touch, 
                     <InternalLink 
-                        href={ "#contactMe" }
-                        text={ "shoot me an email" }
-                        emoji={ "✉️" }
+                        href="#contactMe"
+                        text="shoot me an email"
+                        emoji="✉️"
                     />
                 </p>
-                <p className="is-size-5 minH">
-                    <a href="https://github.com/ThomasWicksWeb"
-                        className="text-highlight hvr-sweep-to-right minH helpingMarginLR" target="_blank"
-                        rel="noopener"><span><strong className="icons">GitHub <i
-                                    className="fas fa-external-link-alt is-size-5"></i></strong></span> </a>
-                    <a href="https://www.linkedin.com/in/thomas-wicks-280b5717a/"
-                        className="text-highlight hvr-sweep-to-right minH helpingMarginLR" target="_blank"
-                        rel="noopener"><strong className="icons">LinkedIn <i
-                                className="fas fa-external-link-alt is-size-5"></i></strong> </a>
+                <p className={classnames("is-size-5", styles.icons, styles.minH)}>
+                    <ExternalLink
+                        text="GitHub "
+                        icon="fas fa-external-link-alt is-size-5"
+                        href="https://github.com/ThomasWicksWeb"
+                    />
+
+                    <ExternalLink
+                        text="LinkedIn"
+                        icon="fas fa-external-link-alt is-size-5"
+                        href="https://www.linkedin.com/in/thomas-wicks-280b5717a/"
+                    />
+
                 </p>
-                <p id="scrollOnDown" className="is-size-5 arrowBounce">👇 Scroll on Down 👇</p>
+                <p id="scrollOnDown" className={ classnames("is-size-5", styles.arrowBounce) }>
+                    <Emoji emoji="👇" label="Point down" />
+                     Scroll on Down 
+                    <Emoji emoji="👇" label="Point down" />
+                    </p>
             </div>
         </section>
     );
