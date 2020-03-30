@@ -9,7 +9,7 @@ const TopBar = (props) => {
         <div>
             <ColorBar />
             <WicksLogo />
-            <Slider currentHourOfDay={ props.currentHourOfDay } />
+            {/* <Slider currentHourOfDay={ props.currentHourOfDay } /> */}
         </div>
     )
 }
