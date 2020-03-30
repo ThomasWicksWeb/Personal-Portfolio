@@ -7,11 +7,11 @@ import SectionHeader from '../Misc/SectionHeader/SectionHeader';
 const AboutMe = () => {
 
     return(
-        <div id="aboutMe" className={classnames("tint", styles.tint, styles.sectionPadding)}>
+        <div id="aboutMe" className={classnames(/*"tint",*/ styles.tint, styles.sectionPadding)}>
             <div className="container ">
                 <SectionHeader HeaderText="About Me" emoji="🎓" label="Graduation cap" />
                 <div className="smallGridParent">
-                    <div className={classnames("is-vcentered projectsSmallGrid", styles.AboutMeColumns)}>
+                    <div className={classnames("projectsSmallGrid", styles.AboutMeColumns)}>
                         <div>
                             <p className="is-size-5">I'll be graduating from Farmingdale State College in May of 2020 with a
                                 Bachelor's degree in Computer Programming &amp; Information Systems 
