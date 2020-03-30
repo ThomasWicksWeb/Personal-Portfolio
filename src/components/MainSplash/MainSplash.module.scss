@@ -1,19 +1,15 @@
 .timeText {
-    margin-bottom: -.5rem;
+    margin-bottom: -.5rem !important;
 }
 
 .myName {
-    margin: .5rem 0 .5rem 0;
+    margin: .5rem 0;
     font-family: 'PT Serif', serif;
     font-weight: 700;
 }
 
 .introSection {
     background-image: url("./images/dottedBackground.png");
-    min-height: 100vh;
-}
-
-.viewportHeight {
     height: calc(100vh - 4px);
 }
 
@@ -24,12 +20,13 @@
 
 .zFix {
     z-index: 0;
-    & > * {
+
+    &>* {
         margin-left: 6px;
     }
 }
 
-.icons > * {
+.icons>* {
     letter-spacing: 1px;
     padding: .3rem 1rem;
 }
@@ -42,28 +39,11 @@
     text-align: center;
     align-items: center;
     margin-top: -5rem;
-    margin-bottom: 4rem;
 }
 
 .headerParaCont p {
     margin: .3rem 0;
-    padding-right: .5rem;
 }
-
-
-.minH {
-    align-self: center !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    flex-direction: row !important;
-    padding: .3rem 1rem !important;
-
-    & i {
-        align-self: stretch;;
-    }
-}
-
 
 @keyframes cheers {
     0% {}

@@ -20,9 +20,9 @@ const MainSplash = ({currentHourOfDay}) => {
     }
 
     return(
-        <section id="introSection"  className={ classnames("section", styles.introSection, styles.viewportHeight) }>
+        <section id="introSection"  className={ classnames("section", styles.introSection) }>
             <div className={ classnames("container", styles.alignment, styles.headerParaCont) }>
-                <p className="is-size-3" id="timeText">{ GetGreeting() }</p>
+                <p className={ classnames("is-size-3", styles.timeText) } id="timeText">{ GetGreeting() }</p>
                 <p className={ classnames("is-size-1", styles.myName)}><strong>Thomas Wicks</strong> <span className={ styles.cheers }><Emoji emoji="🎉" label="Cheers!" /></span></p>
                 <p className="is-size-5 has-text-centered">a software developer from the little-known state of New York.</p>
                 <p className="is-size-5">Down below are some of my projects</p>
@@ -58,7 +58,7 @@ const MainSplash = ({currentHourOfDay}) => {
                     <Emoji emoji="👇" label="Point down" />
                      Scroll on Down 
                     <Emoji emoji="👇" label="Point down" />
-                    </p>
+                </p>
             </div>
         </section>
     );
