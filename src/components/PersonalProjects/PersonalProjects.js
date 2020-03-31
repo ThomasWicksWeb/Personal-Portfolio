@@ -7,30 +7,6 @@ import styles from './PersonalProjects.module.scss';
 
 const PPListLarge = personalProjectsLarge.map(item => {
     return(
-        // <article key={ item.title } className={ classnames("", styles.dottedBG, styles.tint, styles.roundedCorners) }>
-        //     <div className={ classnames("myBox", styles.myBox, styles.projectContainer) }>
-        //         <a href={item.live} target="_blank" rel="noopener noreferrer">
-        //             <img src={ item.img } alt={ item.imgAlt } />
-        //         </a>
-        //         <div className={ classnames("textContainer", styles.projectTextContainer, styles.dottedBG) }>
-        //             <h2 className={ classnames("", styles.projectTitle) }><strong>{ item.title }</strong></h2>
-        //             <p className="is-size-6">{ item.desc }</p>
-        //             <p className="is-size-6">Technologies Used: <strong>{ item.techUsed }</strong></p>
-        //             <p className={ classnames("is-size-6", styles.projectIconRow, styles.footerIcons) }>
-        //                 <ExternalLink 
-        //                     href={ item.live }
-        //                     text={ "View Project" }
-        //                     icon={ "fas fa-external-link-alt is-size-5" } 
-        //                 />
-        //                 <ExternalLink 
-        //                     text={ "View on GitHub" }
-        //                     icon={ "fab fa-github is-size-5" }
-        //                     href={ item.github }
-        //                 />
-        //             </p>
-        //         </div>
-        //     </div>
-        // </article>
         <article key={ item.title } className={ classnames("roundedCorners") }>
                 <a href={item.live} target="_blank" rel="noopener noreferrer" className="link">
                     <img src={ item.img } alt={ item.imgAlt }
