@@ -4,7 +4,7 @@ const personalProjectsLarge = [{
     img: "./images/WebDevResources-min.jpg",
     imgAlt: "Web Dev Resources Thumbnail",
     live: "https://www.WebDevResources.info",
-    github: "https://github.com/ThomasWicksWeb/Web-Dev-Resources-React",
+    github: "https://github.com/ThomasWicksWeb/Web-Dev-Resources",
     techUsed: "React, Bulma"
 }]
 
@@ -14,13 +14,13 @@ const personalProjectsSmall = [{
         img: "./images/germanwordaday-min.jpg",
         imgAlt: "German Word-A-Day! Thumbnail",
         live: "https://germanwordaday.info",
-        github: "https://github.com/ThomasWicksWeb/GermanWordADay",
+        github: "https://github.com/ThomasWicksWeb/German-Word-A-Day",
         techUsed: "Vue JS"
     },
     {
         title: "Tesla Tracker",
         desc: "A website used for tracking the sales of Tesla models from 2015 to 2018.",
-        img: "@/../images/teslaBackground.jpg",
+        img: "./images/teslaBackground.jpg",
         imgAlt: "Tesla Tracker Thumbnail",
         live: "./Projects/TeslaStatsWIP/index.html",
         github: "https://github.com/ThomasWicksWeb/Tesla-Tracker",
