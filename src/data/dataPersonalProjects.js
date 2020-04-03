@@ -15,7 +15,7 @@ const personalProjectsSmall = [{
         imgAlt: "German Word-A-Day! Thumbnail",
         live: "https://germanwordaday.info",
         github: "https://github.com/ThomasWicksWeb/German-Word-A-Day",
-        techUsed: "Vue JS"
+        techUsed: "React"
     },
     {
         title: "Tesla Tracker",
