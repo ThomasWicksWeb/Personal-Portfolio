@@ -1,7 +1,7 @@
 import React from 'react';
-import Slider from '../Misc/Slider/Slider';
-import ColorBar from '../Misc/ColorBar/ColorBar';
-import WicksLogo from '../Misc/WicksLogo/WicksLogo';
+import Slider from './Slider/Slider';
+import ColorBar from './ColorBar/ColorBar';
+import WicksLogo from './WicksLogo/WicksLogo';
 
 const TopBar = (props) => {
 
