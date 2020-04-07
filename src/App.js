@@ -1,11 +1,11 @@
 import React from 'react';
-import TopBar from './components/TopBar/TopBar';
-import MainSplash from './components/MainSplash/MainSplash';
-import AboutMe from './components/AboutMe/AboutMe';
-import ClientWork from './components/ClientWork/ClientWork';
-import PersonalProjects from './components/PersonalProjects/PersonalProjects';
-import ContactMe from './components/ContactMe/ContactMe'
-import AppFooter from './components/Footer/AppFooter'
+import TopBar from './components/TopBar';
+import MainSplash from './components/MainSplash';
+import AboutMe from './components/AboutMe';
+import ClientWork from './components/ClientWork';
+import PersonalProjects from './components/PersonalProjects';
+import ContactMe from './components/ContactMe'
+import AppFooter from './components/Footer'
 
 import './style.scss';
 

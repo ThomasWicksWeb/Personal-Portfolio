@@ -1,5 +1,5 @@
 import React from 'react';
-import Emoji from '../Emoji/Emoji';
+import Emoji from '../Emoji';
 import classnames from 'classnames';
 import styles from './SectionHeader.module.scss';
 

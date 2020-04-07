@@ -1,8 +1,8 @@
 import React from 'react';
 import classnames from 'classnames'
 import { personalProjectsLarge, personalProjectsSmall }  from '../../data/dataPersonalProjects';
-import ExternalLink from '../Misc/ExternalLink/ExternalLink';
-import SectionHeader from '../Misc/SectionHeader/SectionHeader';
+import ExternalLink from '../Misc/ExternalLink';
+import SectionHeader from '../Misc/SectionHeader';
 import styles from './PersonalProjects.module.scss';
 
 const PPListLarge = personalProjectsLarge.map(item => {
