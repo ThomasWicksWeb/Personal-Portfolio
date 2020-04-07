@@ -4,20 +4,20 @@ import ExternalLink from '../Misc/ExternalLink';
 import SectionHeader from '../Misc/SectionHeader';
 
 import classnames from 'classnames';
-import styles from './ClientWork.module.scss';
+import './ClientWork.scss';
 
 const LargeClientsProjectList = ClientsProjects.map(item => {
     return(
-        <article key={ item.title } className={ classnames("roundedCorners") }>
+        <article key={ item.title } className="roundedCorners invertDark">
                 <a href={item.live} target="_blank" rel="noopener noreferrer" className="link">
                     <img src={ item.img } alt={ item.imgAlt }
                         title="Drip on the Wall WIP Thumbnail" />
                 </a>
-                <div className={ classnames("", styles.textContainer) }>
+                <div className="textContainer invertDark">
                     <h2 className={ classnames("") }><strong>{ item.title }</strong></h2>
                     <p className="is-size-5">{ item.desc }</p>
                     <p className="is-size-6">Technologies Used: <strong>{ item.techUsed }</strong></p>
-                    <p className={ classnames("is-size-6") }>
+                    <p className="is-size-6">
                     <ExternalLink 
                         href={ item.live }
                         text={ "View Project" }
@@ -39,8 +39,8 @@ const ClientWork = () => {
         <section className="section">
             <SectionHeader emoji="📁" label="Folder emoji" HeaderText="Client Work" />
 
-            <div className={ styles.largeGridParent }>
-                <div className={ styles.projectsLargeGrid }>
+            <div className="largeGridParent">
+                <div className="projectsLargeGrid invertDark">
                     { LargeClientsProjectList }
                 </div>
             </div>
