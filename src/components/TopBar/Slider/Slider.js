@@ -33,13 +33,15 @@ class Slider extends Component {
         // Border to border marker
         document.querySelectorAll('.borderMarker').forEach(e => e.classList.toggle('borderMarkerDark'));
         // Apply dark background color
-        document.querySelectorAll('body, .textContainer').forEach(e => e.classList.toggle('darkBG'));
+        document.querySelectorAll('body, .roundedCorners, .textContainer').forEach(e => e.classList.toggle('darkBG'));
         // Off-shade footer BG
-        document.querySelectorAll('footer, .tint, .projectContainer, .projectContainer div, .column').forEach(e => e.classList.toggle('darkBGLight'));
+        document.querySelectorAll('footer, .tint, .personalProjectsSection, .projectContainer, .projectContainer div, .column').forEach(e => e.classList.toggle('darkBGLight'));
         // Strengthens orange colors on the page behind text
         document.querySelectorAll('.bannerText, .orangeBackground, .textHighlight, .text-highlight').forEach(e => e.classList.toggle('bannerTextDark'));
         // small project grid background
         document.querySelectorAll('.darkerBG').forEach(e => e.classList.toggle('darkmodeBGDark'));
+        document.querySelectorAll('.invertDark').forEach(e => e.classList.toggle('invertedDark'));
+        document.querySelectorAll('.dottedWhenDark').forEach(e => e.classList.toggle('darkDotted'));
 
 
 

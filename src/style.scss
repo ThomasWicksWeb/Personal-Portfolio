@@ -170,6 +170,16 @@ img {
     background-color: #17223b !important;
 }
 
+.invertedDark {
+    background-color: #1f2b46 !important;
+    border-radius: 20px;
+    background-image: url('./components/MainSplash/images/dottedBackground.png');
+}
+
+.darkDotted {
+    background-image: url('./components/MainSplash/images/dottedBackground.png');
+}
+
 /* Bulma Fix for unneeded margin on the last project section */
 .columns:not(:last-child) {
     margin-bottom: 0;

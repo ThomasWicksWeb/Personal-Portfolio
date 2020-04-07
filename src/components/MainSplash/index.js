@@ -1,8 +1,7 @@
 import React from 'react';
 import InternalLink from '../Misc/InternalLink';
 import Emoji from '../Misc/Emoji';
-import classnames from 'classnames';
-import styles from './MainSplash.module.scss';
+import './MainSplash.scss';
 import ExternalLink from 'components/Misc/ExternalLink';
 
 const MainSplash = ({currentHourOfDay}) => {
@@ -20,27 +19,27 @@ const MainSplash = ({currentHourOfDay}) => {
     }
 
     return(
-        <section id="introSection"  className={ classnames("section", styles.introSection) }>
-            <div className={ classnames("container", styles.alignment, styles.headerParaCont) }>
-                <p className={ classnames("is-size-3", styles.timeText) } id="timeText">{ GetGreeting() }</p>
-                <p className={ classnames("is-size-1", styles.myName)}><strong>Thomas Wicks</strong> <span className={ styles.cheers }><Emoji emoji="🎉" label="Cheers!" /></span></p>
+        <section id="introSection"  className="section introSection">
+            <div className="container alignment headerParaCont">
+                <p className="is-size-3 timeText" id="timeText">{ GetGreeting() }</p>
+                <p className="is-size-1 myName"><strong>Thomas Wicks</strong> <span className="cheers"><Emoji emoji="🎉" label="Cheers!" /></span></p>
                 <p className="is-size-5 has-text-centered">a software developer from the little-known state of New York.</p>
                 <p className="is-size-5">Down below are some of my projects</p>
-                <p className={ classnames("is-size-5", styles.zFix) }>Alternatively, you can view my 
+                <p className="is-size-5 zFix">Alternatively, you can view my 
                     <InternalLink 
                         href="https://thomaswicks.com/MyResume/ThomasWicksResume.pdf"
                         text="résumé"
                         emoji="📝"
                     />
                 </p>
-                <p className={ classnames("is-size-5", styles.zFix) }>If you're looking to get in touch, 
+                <p className="is-size-5 zFix">If you're looking to get in touch, 
                     <InternalLink 
                         href="#contactMe"
                         text="shoot me an email"
                         emoji="✉️"
                     />
                 </p>
-                <p className={classnames("is-size-5", styles.icons, styles.minH)}>
+                <p className="is-size-5 icons minH">
                     <ExternalLink
                         text="GitHub "
                         icon="fas fa-external-link-alt is-size-5"
@@ -54,7 +53,7 @@ const MainSplash = ({currentHourOfDay}) => {
                     />
 
                 </p>
-                <p id="scrollOnDown" className={ classnames("is-size-5", styles.arrowBounce) }>
+                <p id="scrollOnDown" className="is-size-5 arrowBounce">
                     <Emoji emoji="👇" label="Point down" />
                      Scroll on Down 
                     <Emoji emoji="👇" label="Point down" />
