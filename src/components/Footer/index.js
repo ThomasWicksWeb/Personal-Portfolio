@@ -1,6 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
-import ExternalLink from '../Misc/ExternalLink/ExternalLink';
+import ExternalLink from '../Misc/ExternalLink';
 import styles from './AppFooter.module.scss';
 
 const ContactMe = () => {

@@ -1,8 +1,8 @@
 import React from 'react';
 import classnames from 'classnames';
 import styles from './AboutMe.module.scss';
-import Emoji from '../Misc/Emoji/Emoji';
-import SectionHeader from '../Misc/SectionHeader/SectionHeader';
+import Emoji from '../Misc/Emoji';
+import SectionHeader from '../Misc/SectionHeader';
 
 const AboutMe = () => {
 

@@ -1,9 +1,9 @@
 import React from 'react';
-import InternalLink from '../Misc/InternalLink/InternalLink';
-import Emoji from '../Misc/Emoji/Emoji';
+import InternalLink from '../Misc/InternalLink';
+import Emoji from '../Misc/Emoji';
 import classnames from 'classnames';
 import styles from './MainSplash.module.scss';
-import ExternalLink from 'components/Misc/ExternalLink/ExternalLink';
+import ExternalLink from 'components/Misc/ExternalLink';
 
 const MainSplash = ({currentHourOfDay}) => {
 

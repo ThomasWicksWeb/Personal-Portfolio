@@ -1,6 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
-import SectionHeader from '../Misc/SectionHeader/SectionHeader'
+import SectionHeader from '../Misc/SectionHeader'
 import styles from './ContactMe.module.scss';
 
 const ContactMe = () => {

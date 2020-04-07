@@ -1,7 +1,7 @@
 import React from 'react';
 import ClientsProjects from '../../data/dataClientsProjects';
-import ExternalLink from '../Misc/ExternalLink/ExternalLink';
-import SectionHeader from '../Misc/SectionHeader/SectionHeader';
+import ExternalLink from '../Misc/ExternalLink';
+import SectionHeader from '../Misc/SectionHeader';
 
 import classnames from 'classnames';
 import styles from './ClientWork.module.scss';
