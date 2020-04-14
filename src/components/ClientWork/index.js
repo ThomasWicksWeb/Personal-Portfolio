@@ -1,11 +1,12 @@
 import React from 'react';
-import ClientsProjects from '../../data/dataClientsProjects';
+import ClientsProjects from './data/data';
 import ExternalLink from '../Misc/ExternalLink';
 import SectionHeader from '../Misc/SectionHeader';
 
 import classnames from 'classnames';
 import './ClientWork.scss';
 
+// Mapping each project in ClientWork
 const LargeClientsProjectList = ClientsProjects.map(item => {
     return(
         <article key={ item.title } className="roundedCorners invertDark">
@@ -41,6 +42,7 @@ const ClientWork = () => {
 
             <div className="largeGridParent">
                 <div className="projectsLargeGrid invertDark">
+                    {/* Output the mapped array of Large Projects */}
                     { LargeClientsProjectList }
                 </div>
             </div>

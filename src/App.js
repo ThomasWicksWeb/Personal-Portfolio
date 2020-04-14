@@ -11,10 +11,11 @@ import './style.scss';
 
 function App() {
 
+// Used for the dark mode slider in <TopBar /> and to set the greeting in <MainSplash />
 const currentHourOfDay = new Date().getHours();
 
   return (
-    <>
+    <main>
       <TopBar currentHourOfDay={ currentHourOfDay } />
       <MainSplash currentHourOfDay={ currentHourOfDay } />
       <AboutMe />
@@ -22,7 +23,7 @@ const currentHourOfDay = new Date().getHours();
       <PersonalProjects />
       <ContactMe />
       <AppFooter />
-    </>
+    </main>
   );
 }
 

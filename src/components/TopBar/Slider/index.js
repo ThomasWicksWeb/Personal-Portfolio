@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import styles from './Slider.module.scss';
 import classnames from 'classnames';
 
-// import './DarkStyles.module.scss';
-
 class Slider extends Component {
 
     state = {

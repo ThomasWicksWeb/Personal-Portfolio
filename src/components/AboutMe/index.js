@@ -1,5 +1,4 @@
 import React from 'react';
-import classnames from 'classnames';
 import './AboutMe.scss';
 import Emoji from '../Misc/Emoji';
 import SectionHeader from '../Misc/SectionHeader';
