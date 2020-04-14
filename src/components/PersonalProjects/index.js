@@ -1,10 +1,11 @@
 import React from 'react';
 import classnames from 'classnames'
-import { personalProjectsLarge, personalProjectsSmall }  from '../../data/dataPersonalProjects';
+import { personalProjectsLarge, personalProjectsSmall }  from './data';
 import ExternalLink from '../Misc/ExternalLink';
 import SectionHeader from '../Misc/SectionHeader';
 import './PersonalProjects.scss';
 
+// Mapping projects that appear as large (Web Dev Resources)
 const PPListLarge = personalProjectsLarge.map(item => {
     return(
         <article key={ item.title } className="roundedCorners">
@@ -33,6 +34,7 @@ const PPListLarge = personalProjectsLarge.map(item => {
     )
 });
 
+// Mapping projects that appear as small (German Word A day, Tesla Tracker)
 const PPListSmall = personalProjectsSmall.map(item => {
     return(
         <article key={ item.title } className="roundedCorners">
@@ -68,11 +70,13 @@ const PersonalProjects = () => {
             <SectionHeader emoji="📂" label="Folder emoji" HeaderText="My Projects" />
             <div className="largeGridParent">
                 <div className="projectsLargeGrid">
+                    {/* Large projects */}
                     { PPListLarge }
                 </div>
             </div>
             <div className="smallGridParent">
                 <div className="projectsSmallGrid">
+                    {/* Smaller projects */}
                     { PPListSmall }
                 </div>
             </div>
