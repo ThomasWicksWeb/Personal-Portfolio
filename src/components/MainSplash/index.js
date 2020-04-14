@@ -6,6 +6,7 @@ import ExternalLink from 'components/Misc/ExternalLink';
 
 const MainSplash = ({currentHourOfDay}) => {
 
+    // Custom greeting for the visitor based on time of day
     const GetGreeting = () => {
         if (currentHourOfDay <= 2) {
           return("🌅 Good (super early) morning, I'm");
