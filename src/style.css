@@ -19,10 +19,6 @@ body {
   transition: all .5s;
 }
 
-.tint {
-  background-color: #f8f8f8;
-}
-
 a,
 a:visited,
 a:hover,
@@ -43,20 +39,12 @@ img {
   border-radius: 15px;
 }
 
+.tint {
+  background-color: #f8f8f8;
+}
+
 .helpingMarginLR {
   margin: 0 .3rem;
-}
-
-.helpingPaddingTB {
-  padding: 2rem 1rem 0rem 1rem;
-}
-
-.helpingPaddingLeft {
-  padding-left: 1rem;
-}
-
-.mrgBot {
-  margin-bottom: 2rem;
 }
 
 .fa-github {
@@ -121,48 +109,19 @@ img {
   display: inline-block;
 }
 
-.projectTitle {
-  font-family: 'Muli', sans-serif;
-  font-size: 1.5rem;
-}
-
-.myBox {
-  padding: 1rem;
-  border-radius: 20px;
-  background-color: #f5f5f5;
-}
-
-.block:not(:last-child),
-.box:not(:last-child),
-.breadcrumb:not(:last-child),
-.content:not(:last-child),
-.highlight:not(:last-child),
-.level:not(:last-child),
-.list:not(:last-child),
-.message:not(:last-child),
-.notification:not(:last-child),
-.progress:not(:last-child),
-.subtitle:not(:last-child),
-.table-container:not(:last-child),
-.table:not(:last-child),
-.tabs:not(:last-child),
-.title:not(:last-child) {
-  margin-bottom: 0;
-}
-
-/* ====================
+/* =====================
     Dark Mode Styles
 ===================== */
 #btn {
   z-index: 6;
 }
 
-.darkText {
-  color: rgba(255, 255, 255, 0.92) !important;
-}
-
 .darkBG {
   background-color: #17223b !important;
+}
+
+.darkText {
+  color: rgba(255, 255, 255, 0.92) !important;
 }
 
 .darkText:hover {
@@ -179,11 +138,7 @@ img {
 }
 
 .borderMarkerDark::after {
-  background-color: #e54242 !important;
-}
-
-.hvrSweepToRight::before {
-  background-color: #e54242 !important;
+  background-color: rgba(229, 66, 66, 0.9) !important;
 }
 
 .darkBGLight {
@@ -195,13 +150,22 @@ img {
 }
 
 .logoDarkLrg {
-  padding: .5rem 1rem;
+  padding: 5rem 1rem;
   border: 3px solid #f3f3f3 !important;
 }
 
-.darkmodeBGDark {
+.smallGridDarkBG {
   background-color: #17223b !important;
-  background-color: red !important;
+}
+
+.invertedDark {
+  background-color: #1f2b46 !important;
+  border-radius: 20px;
+  background-image: url("./components/MainSplash/images/dottedBackground.png");
+}
+
+.darkDotted {
+  background-image: url("./components/MainSplash/images/dottedBackground.png");
 }
 
 /* Bulma Fix for unneeded margin on the last project section */
@@ -209,11 +173,74 @@ img {
   margin-bottom: 0;
 }
 
+/* ==========================================
+=============== MEDIA QUERIES ===============
+========================================== */
+@media only screen and (max-width: 950px) {
+  .invis {
+    display: none;
+  }
+}
+
+/* ============= MOBILE 800 ============= */
+@media only screen and (max-width: 800px) {
+  .colorAnimations {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .colorsContainer > * {
+    width: 50%;
+    margin: .5rem -2rem .5rem .5rem;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .certGrid {
+    grid-column-gap: 1.2rem;
+    width: 100%;
+  }
+  .certTitle {
+    font-size: 1.5rem;
+  }
+  .certAuthor {
+    font-style: italic;
+    font-size: .9rem;
+  }
+  .raisedButton {
+    font-size: 1rem;
+    padding: .75rem 1rem;
+    margin: 0 2rem;
+  }
+}
+
 /* ============= MOBILE 568 ============= */
 @media only screen and (max-width: 568px) {
-  .introSection {
+  #introSection {
     padding-top: 5rem;
     min-height: calc(100vh + 5rem);
+  }
+  .raisedButton {
+    font-size: .75rem;
+    padding: .75rem 1rem;
+    margin: 0 1rem;
+  }
+  .colorsContainer {
+    width: 100%;
+  }
+  .bannerTextContainer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .bannerText {
     font-size: 1.4rem;
@@ -229,6 +256,27 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .certGrid {
+    grid-column-gap: .5rem;
+    width: 100%;
+  }
+  .certTitle {
+    font-size: 1.2rem;
+    padding: 0 .5rem;
+  }
+  .certAuthor {
+    font-style: italic;
+    font-size: .9rem;
+  }
+  .is-size-5 {
+    font-size: 1.1rem !important;
+  }
+  .is-size-3 {
+    font-size: 1.3rem !important;
+  }
+  .is-size-2 {
+    font-size: 1.8rem !important;
   }
   .footerIcons {
     display: -webkit-box;
@@ -247,6 +295,56 @@ img {
   }
   .footerIcons > * {
     margin: .5rem 0;
+  }
+  .introSection {
+    padding-top: 5rem;
+    min-height: calc(100vh + 5rem);
+  }
+  .bannerText {
+    font-size: 1.4rem;
+    padding: .75rem 1.5rem;
+  }
+  .footerIcons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footerIcons > * {
+    margin: .5rem 0;
+  }
+}
+
+@media only screen and (max-width: 469px) {
+  .invis {
+    display: none;
+  }
+  .colorsContainer {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .colorsContainer > * {
+    width: 100%;
+    margin: .5rem -2rem .5rem .5rem;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .raisedButton {
+    font-size: .75rem;
+    padding: .6rem .8rem;
+    margin: 0 .2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

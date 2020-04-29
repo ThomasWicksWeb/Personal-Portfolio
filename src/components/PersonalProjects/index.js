@@ -17,7 +17,7 @@ const PPListLarge = personalProjectsLarge.map(item => {
                     <h2><strong>{ item.title }</strong></h2>
                     <p className="is-size-5">{ item.desc }</p>
                     <p className="is-size-6">Technologies Used: <strong>{ item.techUsed }</strong></p>
-                    <p className="is-size-6">
+                    <p className="is-size-6 ProjectLinkContainer">
                     <ExternalLink 
                         href={ item.live }
                         text={ "View Project" }
@@ -46,7 +46,7 @@ const PPListSmall = personalProjectsSmall.map(item => {
                     <h2><strong>{ item.title }</strong></h2>
                     <p className="is-size-5">{ item.desc }</p>
                     <p className="is-size-6">Technologies Used: <strong>{ item.techUsed }</strong></p>
-                    <p className={ classnames("is-size-6") }>
+                    <p className={ classnames("is-size-6 ProjectLinkContainer") }>
                     <ExternalLink 
                         href={ item.live }
                         text={ "View Project" }

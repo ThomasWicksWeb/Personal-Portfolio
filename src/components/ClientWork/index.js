@@ -18,7 +18,7 @@ const LargeClientsProjectList = ClientsProjects.map(item => {
                     <h2 className={ classnames("") }><strong>{ item.title }</strong></h2>
                     <p className="is-size-5">{ item.desc }</p>
                     <p className="is-size-6">Technologies Used: <strong>{ item.techUsed }</strong></p>
-                    <p className="is-size-6">
+                    <p className="is-size-6 ProjectLinkContainer">
                     <ExternalLink 
                         href={ item.live }
                         text={ "View Project" }
