@@ -185,8 +185,133 @@ img {
     margin-bottom: 0;
 }
 
+/* ==========================================
+=============== MEDIA QUERIES ===============
+========================================== */
+
+@media only screen and (max-width: 950px) {
+
+    .invis {
+        display: none;
+    }
+}
+
+/* ============= MOBILE 800 ============= */
+
+@media only screen and (max-width: 800px) {
+
+    .colorAnimations {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .colorsContainer > * {
+        width: 50%;
+        margin: .5rem -2rem .5rem .5rem;
+        align-self: center;
+    }
+
+    .certGrid {
+        grid-column-gap: 1.2rem;
+        width: 100%;
+    }
+
+    .certTitle {
+        font-size: 1.5rem;
+    }
+
+    .certAuthor {
+        font-style: italic;
+        font-size: .9rem;
+    }
+
+    .raisedButton {
+        font-size: 1rem;
+        padding: .75rem 1rem;
+        margin: 0 2rem;
+    }
+}
+
+/* ============= MOBILE 568 ============= */
 
 @media only screen and (max-width: 568px) {
+
+    #introSection {
+        padding-top: 5rem;
+        min-height: calc(100vh + 5rem);
+    }
+
+    .raisedButton {
+        font-size: .75rem;
+        padding: .75rem 1rem;
+        margin: 0 1rem;
+    }
+
+    .colorsContainer {
+        width: 100%;
+    }
+
+    .bannerTextContainer {
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .bannerText {
+        font-size: 1.4rem;
+        padding: .75rem 1.5rem;
+    }
+
+    .projectIconRow a i {
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .certGrid {
+        grid-column-gap: .5rem;
+        width: 100%;
+    }
+
+    .certTitle {
+        font-size: 1.2rem;
+        padding: 0 .5rem;
+    }
+
+    .certAuthor {
+        font-style: italic;
+        font-size: .9rem;
+    }
+
+    .is-size-5 {
+        font-size: 1.1rem !important;
+    }
+
+    .is-size-3 {
+        font-size: 1.3rem !important;
+    }
+
+    .is-size-2 {
+        font-size: 1.8rem !important;
+    }
+
+    .footerIcons {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footerIcons > * {
+        margin: .5rem 0;
+    }
+
+
+
+
+
+
 
     .introSection {
         padding-top: 5rem;
@@ -207,5 +332,29 @@ img {
 
     .footerIcons > * {
         margin: .5rem 0;
+    }
+}
+
+@media only screen and (max-width: 469px) {
+
+    .invis {
+        display: none;
+    }
+
+    .colorsContainer {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .colorsContainer > * {
+        width: 100%;
+        margin: .5rem -2rem .5rem .5rem;
+        align-self: center;
+    }
+
+    .raisedButton {
+        font-size: .75rem;
+        padding: .6rem .8rem;
+        margin: 0 .2rem;
     }
 }

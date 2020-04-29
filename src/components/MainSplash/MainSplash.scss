@@ -102,7 +102,12 @@
 
     .introSection {
         padding-top: 5rem;
-        min-height: calc(100vh + 5rem);
+        min-height: calc(100vh + 8rem);
+    }
+
+    .MainSplashIcons {
+        display: flex !important;
+        flex-direction: column !important;
     }
 
 }

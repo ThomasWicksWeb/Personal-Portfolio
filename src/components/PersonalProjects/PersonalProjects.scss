@@ -37,7 +37,7 @@ img {
 
 .projectsLargeGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(900px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     grid-gap: 3rem;
 }
 
@@ -53,4 +53,28 @@ img {
     display: grid !important;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 3rem !important;
+}
+
+@media only screen and (max-width: 568px) {
+    .projectsLargeGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        grid-gap: 3rem;
+    }
+
+    .largeGridParent {
+        margin: 20px auto;
+        padding: 0 0px;
+    }
+
+    .smallGridParent {
+        margin: 20px auto;
+        padding: 0 0px;
+    }
+}
+
+@media only screen and (max-width: 458px) {
+    .ProjectLinkContainer > * {
+        margin-top: 6px !important;
+    }
 }

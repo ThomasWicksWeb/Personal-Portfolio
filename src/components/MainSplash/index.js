@@ -40,7 +40,7 @@ const MainSplash = ({currentHourOfDay}) => {
                         emoji="✉️"
                     />
                 </p>
-                <p className="is-size-5 icons minH">
+                <p className="is-size-5 icons minH MainSplashIcons">
                     <ExternalLink
                         text="GitHub "
                         icon="fas fa-external-link-alt is-size-5"
