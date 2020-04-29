@@ -4,7 +4,7 @@ const personalProjectsLarge = [
     desc: "A lightning fast and lightweight notes app on the web",
     img: "./images/KeepMyNotes-min.jpg",
     imgAlt: "Keep My Notes Thumbnail",
-    live: "https://dreamy-shaw-e6c1ad.netlify.app/",
+    live: "https://keepmynotes.app",
     github: "https://github.com/ThomasWicksWeb/Keep-My-Notes-App",
     techUsed: "React, React Router, Firebase Authentication & Firestore, Bulma",
   },
