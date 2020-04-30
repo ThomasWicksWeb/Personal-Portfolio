@@ -28,7 +28,7 @@ const MainSplash = ({currentHourOfDay}) => {
                 <p className="is-size-5">Down below are some of my projects</p>
                 <p className="is-size-5 zFix">Alternatively, you can view my 
                     <InternalLink 
-                        href="https://thomaswicks.com/MyResume/ThomasWicksResume.pdf"
+                        href="https://thomaswicks.com/resume/"
                         text="résumé"
                         emoji="📝"
                     />
