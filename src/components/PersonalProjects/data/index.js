@@ -35,7 +35,7 @@ const personalProjectsSmall = [
     title: "Tesla Tracker",
     desc:
       "A website used for tracking the sales of Tesla models from 2015 to 2018.",
-    img: "./images/teslaBackground.jpg",
+    img: "./images/teslaBackground-min.jpg",
     imgAlt: "Tesla Tracker Thumbnail",
     live: "./Projects/TeslaStatsWIP/index.html",
     github: "https://github.com/ThomasWicksWeb/Tesla-Tracker",
