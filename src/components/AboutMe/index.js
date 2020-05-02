@@ -1,51 +1,57 @@
-import React from 'react';
-import './AboutMe.scss';
-import Emoji from '../Misc/Emoji';
-import SectionHeader from '../Misc/SectionHeader';
+import React from "react";
+import "./AboutMe.scss";
+import Emoji from "../Misc/Emoji";
+import SectionHeader from "../Misc/SectionHeader";
+import InternalLink from "../Misc/InternalLink";
 
 const AboutMe = () => {
-
-    return(
-        <div id="aboutMe" className="tint sectionPadding">
-            <div className="container ">
-                <SectionHeader HeaderText="About Me" emoji="🎓" label="Graduation cap" />
-                <div className="smallGridParent">
-                    <div className="projectsSmallGrid AboutMeColumns">
-                        <div>
-                            <p className="is-size-5">I'll be graduating from Farmingdale State College in May of 2020 with a
-                                Bachelor's degree in Computer Programming &amp; Information Systems 
-                                <Emoji label="School building"
-                                        emoji="🏛️"
-                                />
-                            </p>
-                            <br />
-                            <p className="is-size-5">I can speak a decent bit of German 
-                                <Emoji label="German flag"
-                                        emoji="🇩🇪"
-                                />
-                            </p>
-                            <br />
-                            <p className="is-size-5">I really enjoy programming, gaming, lisening to music &amp; podcasts, and
-                                video editing 
-                                <Emoji label="Floppy Disc"
-                                        emoji="💾"
-                                />
-                            </p>
-                            <br />
-                            <p className="is-size-5">I have a pug named Frank 
-                            <Emoji label="Dog emoji"
-                                    emoji="🐶"
-                            />
-                            </p>
-                        </div>
-                        <div>
-                            <img src="./images/thatsme.png" alt="That's me!" />
-                        </div>
-                    </div>
-                </div>
+  return (
+    <div id="aboutMe" className="tint sectionPadding">
+      <div className="container ">
+        <SectionHeader
+          HeaderText="About Me"
+          emoji="🎓"
+          label="Graduation cap"
+        />
+        <div className="smallGridParent">
+          <div className="projectsSmallGrid AboutMeColumns">
+            <div>
+              <p className="is-size-5">
+                I'll be graduating from Farmingdale State College in May of 2020
+                with a Bachelor's degree in Computer Programming &amp;
+                Information Systems
+                <Emoji label="School building" emoji="🏛️" />
+              </p>
+              <br />
+              <p className="is-size-5">
+                I can speak a decent bit of German
+                <Emoji label="German flag" emoji="🇩🇪" />
+              </p>
+              <br />
+              <p className="is-size-5">
+                I really enjoy programming, gaming, and listening to music &amp;
+                podcasts
+                <Emoji label="Floppy Disc" emoji="💾" />
+              </p>
+              <br />
+              <p className="is-size-5 zFix">
+                I have a 10 year old pug named
+                <InternalLink
+                  text="Frank"
+                  href="https://thomaswicks.com/Frank.JPG"
+                  emoji="🐶"
+                />
+                {/* <Emoji label="Dog emoji" emoji="🐶" /> */}
+              </p>
             </div>
+            <div>
+              <img src="./images/thatsme.png" alt="That's me!" />
+            </div>
+          </div>
         </div>
-    );
-}
+      </div>
+    </div>
+  );
+};
 
 export default AboutMe;

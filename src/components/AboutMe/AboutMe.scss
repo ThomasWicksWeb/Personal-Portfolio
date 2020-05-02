@@ -27,3 +27,11 @@
 .tint {
     background-color: #f8f8f8;
 }
+
+.zFix {
+    z-index: 0;
+
+    &>* {
+        margin-left: 6px;
+    }
+}

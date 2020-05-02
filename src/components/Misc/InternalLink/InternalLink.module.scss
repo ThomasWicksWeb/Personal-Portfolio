@@ -19,3 +19,11 @@
 .borderMarker:hover::after {
     top: 0;
 }
+
+.zFix {
+    z-index: 0;
+
+    &>* {
+        margin-left: 6px;
+    }
+}
