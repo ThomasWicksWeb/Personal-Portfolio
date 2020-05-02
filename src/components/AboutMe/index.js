@@ -2,7 +2,7 @@ import React from "react";
 import "./AboutMe.scss";
 import Emoji from "../Misc/Emoji";
 import SectionHeader from "../Misc/SectionHeader";
-import InternalLink from "../Misc/InternalLink";
+import ExternalLink from "../Misc/ExternalLink";
 
 const AboutMe = () => {
   return (
@@ -36,12 +36,11 @@ const AboutMe = () => {
               <br />
               <p className="is-size-5 zFix">
                 I have a 10 year old pug named
-                <InternalLink
-                  text="Frank"
+                <ExternalLink
+                  text="Frank 🐶"
                   href="https://thomaswicks.com/Frank.JPG"
-                  emoji="🐶"
+                  // icon="🐶"
                 />
-                {/* <Emoji label="Dog emoji" emoji="🐶" /> */}
               </p>
             </div>
             <div>
