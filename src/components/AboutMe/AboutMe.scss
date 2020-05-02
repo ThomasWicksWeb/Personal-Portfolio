@@ -1,29 +1,29 @@
 #aboutMe {
-    max-width: 100% !important;
+  max-width: 100% !important;
 }
 
 .sectionPadding {
-    padding: 2rem 1rem;
+  padding: 2rem 1rem;
 }
 
 .AboutMeColumns {
-    width: 100%;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
-    box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
-    grid-gap: 30px;
-    max-width: 1050px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+  grid-gap: 30px;
+  max-width: 1050px;
 }
 
 .AboutMeColumns > * {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .tint {
-    background-color: #f8f8f8;
+  background-color: #f8f8f8;
 }
