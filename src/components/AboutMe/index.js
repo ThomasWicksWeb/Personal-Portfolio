@@ -44,7 +44,7 @@ const AboutMe = () => {
               </p>
             </div>
             <div>
-              <img src="./images/thatsme.png" alt="That's me!" />
+              <img src="./images/thatsme.jpg" alt="That's me!" />
             </div>
           </div>
         </div>
