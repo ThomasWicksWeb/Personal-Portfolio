@@ -17,7 +17,7 @@ const AboutMe = () => {
           <div className="projectsSmallGrid AboutMeColumns">
             <div>
               <p className="is-size-5">
-                I'll be graduating from Farmingdale State College in May of 2020
+                I've recently graduated from Farmingdale State College this last May
                 with a Bachelor's degree in Computer Programming &amp;
                 Information Systems
                 <Emoji label="School building" emoji="🏛️" />
@@ -44,7 +44,7 @@ const AboutMe = () => {
               </p>
             </div>
             <div>
-              <img src="./images/thatsme.png" alt="That's me!" />
+              <img src="./images/thatsme.jpg" alt="That's me!" />
             </div>
           </div>
         </div>
