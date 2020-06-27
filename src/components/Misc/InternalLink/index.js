@@ -3,7 +3,6 @@ import classnames from "classnames";
 import styles from "./InternalLink.module.scss";
 
 const InternalLink = ({ text, href, emoji }) => {
-  console.log(styles);
   return (
     <a
       target="_blank"
