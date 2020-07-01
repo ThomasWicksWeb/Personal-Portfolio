@@ -35,7 +35,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(41, 152, 255, 0.5);
+        background: rgba(90, 175, 255, 0.808);
         -webkit-transform: scaleX(0);
         transform: scaleX(0);
         -webkit-transform-origin: 0 50%;
@@ -52,7 +52,7 @@
 .hvrSweepToRight:hover,
 .hvrSweepToRight:focus,
 .hvrSweepToRight:active {
-    color: white;
+    color: white !important;
 }
 
 .hvrSweepToRight:hover:before,
