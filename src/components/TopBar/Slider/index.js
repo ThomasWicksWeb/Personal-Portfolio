@@ -1,62 +1,59 @@
-import React, { Component } from 'react';
-import styles from './Slider.module.scss';
-import classnames from 'classnames';
+import React, { useContext, useRef, useEffect, useState } from "react";
+import styles from "./Slider.module.scss";
+import classnames from "classnames";
+import { ThemeContext } from "../../../contexts/ThemeContext";
 
-class Slider extends Component {
+const Slider = ({ currentHourOfDay }) => {
+  const { IsLightTheme, Theme, setTheme } = useContext(ThemeContext);
+  const LocalTheme = IsLightTheme ? Theme.light : Theme.dark;
 
-    state = {
-        darkMode: false
+  const SliderRef = useRef();
+
+  const [SliderValue, setSliderValue] = useState(false);
+
+  useEffect(() => {
+    if (currentHourOfDay <= 5 || currentHourOfDay >= 20) {
+      // SliderRef.checked = true;
+      setSliderValue(true);
+      setTheme(false);
+      // Border to border marker
+      BorderMarkerCSS();
     }
-    
-    render(){
-        return(
-            <div>
-                <label className={ styles.switch }>
-                    <input ref="darkModeSliderBtn" type="checkbox" onClick={this.darken} />
-                    <span className={ classnames(styles.round, styles.slider) }>&nbsp;</span>
-                </label>
-            </div>
-        )
+  }, []);
+
+  const handleSlider = (e) => {
+    // e.preventDefault();
+
+    if (SliderValue) {
+      setSliderValue(false);
+      setTheme(true);
+      BorderMarkerCSS();
+    } else {
+      setSliderValue(true);
+      setTheme(false);
+      BorderMarkerCSS();
     }
+  };
 
-    componentDidMount(){
-        if (this.props.currentHourOfDay <= 5 || this.props.currentHourOfDay >= 20) {
-            this.darken();
-            this.refs.darkModeSliderBtn.checked = true;
-            this.setState({darkMode: true})
-        };
-    }
+  function BorderMarkerCSS() {
+    document
+      .querySelectorAll(".borderMarker")
+      .forEach((e) => e.classList.toggle("borderMarkerDark"));
+  }
 
-    darken = () => {
-        // Border to border marker
-        document.querySelectorAll('.borderMarker').forEach(e => e.classList.toggle('borderMarkerDark'));
-        // Apply dark background color
-        document.querySelectorAll('body, .roundedCorners, .textContainer').forEach(e => e.classList.toggle('darkBG'));
-        // Off-shade footer BG
-        document.querySelectorAll('footer, .tint, .personalProjectsSection, .projectContainer, .projectContainer div, .column').forEach(e => e.classList.toggle('darkBGLight'));
-        // Strengthens orange colors on the page behind text
-        document.querySelectorAll('.bannerText, .orangeBackground, .textHighlight, .text-highlight').forEach(e => e.classList.toggle('bannerTextDark'));
-        // small project grid background
-        document.querySelectorAll('.darkerBG').forEach(e => e.classList.toggle('darkmodeBGDark'));
-        document.querySelectorAll('.invertDark').forEach(e => e.classList.toggle('invertedDark'));
-        document.querySelectorAll('.dottedWhenDark').forEach(e => e.classList.toggle('darkDotted'));
-
-
-
-        // All general text on the page
-        document.querySelectorAll('p, a, span, label, strong, h3, .is-size-3, .is-size-4, .is-size-5, .is-size-6, .projectTitle').forEach(e => e.classList.toggle('darkText'));
-
-        // WICKS logo
-        document.querySelectorAll('.logoLight').forEach(e => e.classList.toggle('logoDark'));
-
-        if(this.state.darkMode === true){
-            this.setState({darkMode: false});
-        } else {
-            this.setState({darkMode: true});
-        }
-
-      }
-
-}
+  return (
+    <div>
+      <label className={styles.switch}>
+        <input
+          ref={SliderRef}
+          checked={SliderValue}
+          type="checkbox"
+          onChange={handleSlider}
+        />
+        <span className={classnames(styles.round, styles.slider)}>&nbsp;</span>
+      </label>
+    </div>
+  );
+};
 
 export default Slider;
