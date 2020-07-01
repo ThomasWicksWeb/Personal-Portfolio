@@ -7,6 +7,8 @@ import { PersonalProjects } from "./components/PersonalProjects";
 import { ContactMe } from "./components/ContactMe";
 import { Footer } from "./components/Footer";
 
+import ThemeContextProvider from "./contexts/ThemeContext";
+
 import "./style.scss";
 
 function App() {
@@ -14,15 +16,17 @@ function App() {
   const currentHourOfDay = new Date().getHours();
 
   return (
-    <main>
-      <TopBar currentHourOfDay={currentHourOfDay} />
-      <MainSplash currentHourOfDay={currentHourOfDay} />
-      <AboutMe />
-      <ClientWork />
-      <PersonalProjects />
-      <ContactMe />
-      <Footer />
-    </main>
+    <ThemeContextProvider>
+      <main>
+        <TopBar currentHourOfDay={currentHourOfDay} />
+        <MainSplash currentHourOfDay={currentHourOfDay} />
+        <AboutMe />
+        <ClientWork />
+        <PersonalProjects />
+        <ContactMe />
+        <Footer />
+      </main>
+    </ThemeContextProvider>
   );
 }
 
