@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import InternalLink from "../Misc/InternalLink";
 import Emoji from "../Misc/Emoji";
 import "./MainSplash.scss";
 import ExternalLink from "components/Misc/ExternalLink";
+
+import { ThemeContext } from "../../contexts/ThemeContext";
 
 const MainSplash = ({ currentHourOfDay }) => {
   // Custom greeting for the visitor based on time of day
@@ -18,14 +20,24 @@ const MainSplash = ({ currentHourOfDay }) => {
     }
   };
 
+  const { IsLightTheme, Theme } = useContext(ThemeContext);
+  const LocalTheme = IsLightTheme ? Theme.light : Theme.dark;
+
   return (
-    <section id="introSection" className="section introSection">
+    <section
+      id="introSection"
+      className="section introSection"
+      style={{
+        backgroundColor: LocalTheme.backgroundColorDark,
+        color: LocalTheme.syntax,
+      }}
+    >
       <div className="container alignment headerParaCont">
         <p className="is-size-3 timeText" id="timeText">
           {GetGreeting()}
         </p>
         <p className="is-size-1 myName">
-          <strong>Thomas Wicks</strong>{" "}
+          <strong style={{ color: LocalTheme.syntax }}>Thomas Wicks</strong>{" "}
           <span className="cheers">
             <Emoji emoji="🎉" label="Cheers!" />
           </span>
