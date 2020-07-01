@@ -6,129 +6,127 @@ $darkModeRed: rgb(229, 66, 66);
 $darkestBlue: #1f2b46;
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-size: 62.5%;
-    font-family: 'Karla', sans-serif;
-    background-color: #f5f5f5;
-    color: #3A3A3A;
-    overflow-x: hidden;
-    overflow: hidden;
-    transition: all .5s;
+  font-size: 62.5%;
+  font-family: "Karla", sans-serif;
+  background-color: #f5f5f5;
+  color: #3a3a3a;
+  overflow-x: hidden;
+  overflow: hidden;
+  transition: all 0.5s;
 }
 
 .tint {
-    background-color: #f8f8f8;
+  background-color: #f8f8f8;
 }
 
 a,
 a:visited,
 a:hover,
 a:active {
-    text-decoration: none;
-    cursor: pointer;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 a:focus {
-    outline: none !important;
+  outline: none !important;
 }
 
 i {
-    height: 1rem;
+  height: 1rem;
 }
 
 img {
-    border-radius: 15px;
+  border-radius: 15px;
 }
 
 .helpingMarginLR {
-    margin: 0 .3rem;
+  margin: 0 0.3rem;
 }
 
 .helpingPaddingTB {
-    padding: 2rem 1rem 0rem 1rem;
+  padding: 2rem 1rem 0rem 1rem;
 }
 
 .helpingPaddingLeft {
-    padding-left: 1rem;
+  padding-left: 1rem;
 }
 
 .mrgBot {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .fa-github {
-    align-self: center !important;
+  align-self: center !important;
 }
 
 /* Sweep To Right */
 .hvr-sweep-to-right {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    -webkit-transition-property: color;
-    transition-property: color;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(41, 152, 255, 0.5);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
-
-    &:before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(41, 152, 255, 0.5);
-        -webkit-transform: scaleX(0);
-        transform: scaleX(0);
-        -webkit-transform-origin: 0 50%;
-        transform-origin: 0 50%;
-        -webkit-transition-property: transform;
-        transition-property: transform;
-        -webkit-transition-duration: 0.3s;
-        transition-duration: 0.3s;
-        -webkit-transition-timing-function: ease-out;
-        transition-timing-function: ease-out;
-    }
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
 }
 
 .hvr-sweep-to-right:hover,
 .hvr-sweep-to-right:focus,
 .hvr-sweep-to-right:active {
-    color: white;
+  color: #fff !important;
 }
 
 .hvr-sweep-to-right:hover:before,
 .hvr-sweep-to-right:focus:before,
 .hvr-sweep-to-right:active:before {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .noWrap {
-    display: inline-block;
+  display: inline-block;
 }
 
-
 .projectTitle {
-    font-family: 'Muli', sans-serif;
-    font-size: 1.5rem;
+  font-family: "Muli", sans-serif;
+  font-size: 1.5rem;
 }
 
 .myBox {
-    padding: 1rem;
-    border-radius: 20px; 
-    background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: #f5f5f5;
 }
-
 
 .block:not(:last-child),
 .box:not(:last-child),
@@ -145,9 +143,8 @@ img {
 .table:not(:last-child),
 .tabs:not(:last-child),
 .title:not(:last-child) {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
-
 
 // .bannerTextSection.section {
 //     padding-bottom: 0;
@@ -178,7 +175,6 @@ img {
 //     margin-top: .5rem;
 // }
 
-
 // .orangeBackground {
 //     background-color: rgba(255, 147, 0, 0.5);
 //     display: inline-block;
@@ -206,7 +202,7 @@ img {
 // .borderMarker {
 //     position: relative;
 //     color: #333;
-//     padding: 4px 8px;    
+//     padding: 4px 8px;
 // }
 
 // .zFix {
@@ -256,21 +252,19 @@ img {
 //     font-size: 1.5rem;
 // }
 
-
 // .projectIconRow a {
 //     margin-top: 5px;
 // }
 
 // .myBox {
 //     padding: 1rem;
-//     border-radius: 20px; 
+//     border-radius: 20px;
 //     margin-bottom: 0;
 // }
 
-
 // .myBox {
 //     padding: 1rem;
-//     border-radius: 20px; 
+//     border-radius: 20px;
 //     & img {
 //     margin-bottom: 0;
 // }
@@ -279,94 +273,92 @@ img {
 ===================== */
 
 #btn {
-    z-index: 6;
+  z-index: 6;
 }
 
 // Change all text on the website to white
 .darkText {
-    color: rgba(255, 255, 255, 0.92) !important;
+  color: rgba(255, 255, 255, 0.92) !important;
 }
 
-// 
+//
 .darkBG {
-    background-color: #17223b !important;
+  background-color: #17223b !important;
 }
-
 
 .darkText:hover {
-    color: rgba(255, 255, 255, 0.92) !important;
+  color: rgba(255, 255, 255, 0.92) !important;
 }
 
 .pinkText {
-    color: #e54242 !important;
-    background: green !important;
+  color: #e54242 !important;
+  background: green !important;
 }
 
 .bannerTextDark {
-    background-color: #e54242 !important;
+  background-color: #e54242 !important;
 }
 
 .borderMarkerDark::after {
-    // background-color: rgba(229, 66, 66, 0.9) !important;
-    background-color: $darkModeRed !important;
+  // background-color: rgba(229, 66, 66, 0.9) !important;
+  background-color: $darkModeRed !important;
 }
 
 .hvrSweepToRight::before {
-    // background-color: rgba(229, 66, 66, 0.9) !important;
-    background-color: $darkModeRed !important;
+  // background-color: rgba(229, 66, 66, 0.9) !important;
+  background-color: $darkModeRed !important;
 }
 
 .darkBGLight {
-    background-color: #1f2b46 !important;
+  background-color: #1f2b46 !important;
 }
 
 .logoDark {
-    border: 2px solid white !important;
+  border: 2px solid white !important;
 }
 
 .logoDarkLrg {
-    padding: .5rem 1rem;
-    border: 3px solid #f3f3f3 !important;
+  padding: 0.5rem 1rem;
+  border: 3px solid #f3f3f3 !important;
 }
 
 .darkmodeBGDark {
-    background-color: #17223b !important;
-    background-color: red !important;
+  background-color: #17223b !important;
+  background-color: red !important;
 }
 
 /* Bulma Fix for unneeded margin on the last project section */
 .columns:not(:last-child) {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 /* ============= MOBILE 568 ============= */
 
 @media only screen and (max-width: 568px) {
+  .introSection {
+    padding-top: 5rem;
+    min-height: calc(100vh + 5rem);
+  }
 
-    .introSection {
-        padding-top: 5rem;
-        min-height: calc(100vh + 5rem);
-    }
+  .bannerText {
+    font-size: 1.4rem;
+    padding: 0.75rem 1.5rem;
+  }
 
-    .bannerText {
-        font-size: 1.4rem;
-        padding: .75rem 1.5rem;
-    }
+  .projectIconRow a i {
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .projectIconRow a i {
-        align-self: center;
-        justify-content: center;
-        align-items: center;
-    }
+  .footerIcons {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .footerIcons {
-        display: flex;
-        flex-direction: column !important;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .footerIcons > * {
-        margin: .5rem 0;
-    }
+  .footerIcons > * {
+    margin: 0.5rem 0;
+  }
 }

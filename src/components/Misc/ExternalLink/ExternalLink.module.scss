@@ -1,88 +1,87 @@
 .textHighlight {
-    color: black;
-    background-color: rgba(255, 147, 0, 0.5);
-    // background-color: rgb(142, 250, 201);
-    padding: .3rem 1rem;
-    text-align: center;
-    margin: 0 .3rem;
+  color: black;
+  background-color: rgba(255, 147, 0, 0.5);
+  // background-color: rgb(142, 250, 201);
+  padding: 0.3rem 1rem;
+  text-align: center;
+  margin: 0 0.3rem;
 
-    &:hover {
-        color: white;
-        background-color: rgba(41, 152, 255, 0.5);
-        transition: all .2s;
-    }
+  &:hover {
+    color: #fff !important;
+    background-color: rgba(41, 152, 255, 0.5);
+    transition: all 0.2s;
+  }
 }
-
 
 /* Sweep To Right */
 .hvrSweepToRight {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    -webkit-transition-property: color;
-    transition-property: color;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(90, 175, 255, 0.808);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
-
-    &:before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(90, 175, 255, 0.808);
-        -webkit-transform: scaleX(0);
-        transform: scaleX(0);
-        -webkit-transform-origin: 0 50%;
-        transform-origin: 0 50%;
-        -webkit-transition-property: transform;
-        transition-property: transform;
-        -webkit-transition-duration: 0.3s;
-        transition-duration: 0.3s;
-        -webkit-transition-timing-function: ease-out;
-        transition-timing-function: ease-out;
-    }
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
 }
 
 .hvrSweepToRight:hover,
 .hvrSweepToRight:focus,
 .hvrSweepToRight:active {
-    color: white !important;
+  color: #fff !important;
 }
 
 .hvrSweepToRight:hover:before,
 .hvrSweepToRight:focus:before,
 .hvrSweepToRight:active:before {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .borderMarker {
-    position: relative;
-    color: #333;
-    padding: 4px 8px;    
+  position: relative;
+  color: #333;
+  padding: 4px 8px;
 }
 
 .zFix {
-    z-index: 0 !important;
-    & > * {
-        margin-left: 6px !important;
-    }
+  z-index: 0 !important;
+  & > * {
+    margin-left: 6px !important;
+  }
 }
 
 .borderMarker::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 70%;
-    left: -0.1px;
-    right: -0.1px;
-    bottom: 0;
-    transition: top .1s ease-in-out;
-    background-color: rgba(255, 147, 0, 0.5);
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 70%;
+  left: -0.1px;
+  right: -0.1px;
+  bottom: 0;
+  transition: top 0.1s ease-in-out;
+  background-color: rgba(255, 147, 0, 0.5);
 }
