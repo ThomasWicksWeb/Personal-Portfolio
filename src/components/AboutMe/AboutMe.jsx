@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./AboutMe.scss";
 import Emoji from "../Misc/Emoji";
 import SectionHeader from "../Misc/SectionHeader";
 import ExternalLink from "../Misc/ExternalLink";
 
+import { ThemeContext } from "../../contexts/ThemeContext";
+
 const AboutMe = () => {
+  // Theme Context Variables
+  const { IsLightTheme, Theme } = useContext(ThemeContext);
+  const LocalTheme = IsLightTheme ? Theme.light : Theme.dark;
+
   return (
-    <div id="aboutMe" className="tint sectionPadding">
+    <div
+      id="aboutMe"
+      className="tint sectionPadding"
+      style={{
+        backgroundColor: LocalTheme.backgroundColorLight,
+        color: LocalTheme.syntax,
+      }}
+    >
       <div className="container ">
         <SectionHeader
           HeaderText="About Me"
@@ -17,8 +30,8 @@ const AboutMe = () => {
           <div className="projectsSmallGrid AboutMeColumns">
             <div>
               <p className="is-size-5">
-                I've recently graduated from Farmingdale State College this last May
-                with a Bachelor's degree in Computer Programming &amp;
+                I've recently graduated from Farmingdale State College this last
+                May with a Bachelor's degree in Computer Programming &amp;
                 Information Systems
                 <Emoji label="School building" emoji="🏛️" />
               </p>
