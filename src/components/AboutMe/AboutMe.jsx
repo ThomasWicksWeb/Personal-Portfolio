@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import "./AboutMe.scss";
-import Emoji from "../Misc/Emoji";
-import SectionHeader from "../Misc/SectionHeader";
-import ExternalLink from "../Misc/ExternalLink";
+import { Emoji } from "../Misc/Emoji";
+import { SectionHeader } from "../Misc/SectionHeader";
+import { ExternalLink } from "../Misc/ExternalLink";
 
 import { ThemeContext } from "../../contexts/ThemeContext";
 

@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import InternalLink from "../Misc/InternalLink";
-import Emoji from "../Misc/Emoji";
+import { InternalLink } from "../Misc/InternalLink";
+import { Emoji } from "../Misc/Emoji";
+import { ExternalLink } from "components/Misc/ExternalLink";
 import "./MainSplash.scss";
-import ExternalLink from "components/Misc/ExternalLink";
 
 import { ThemeContext } from "../../contexts/ThemeContext";
 

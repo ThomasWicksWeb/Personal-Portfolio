@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
-import SectionHeader from "../Misc/SectionHeader";
+import { SectionHeader } from "../Misc/SectionHeader";
 import "./ContactMe.scss";
+
 import { ThemeContext } from "../../contexts/ThemeContext";
 
 const ContactMe = () => {

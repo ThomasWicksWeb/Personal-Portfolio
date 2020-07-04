@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import classnames from "classnames";
 import { personalProjectsLarge, personalProjectsSmall } from "./data";
-import ExternalLink from "../Misc/ExternalLink";
-import SectionHeader from "../Misc/SectionHeader";
+import { ExternalLink } from "../Misc/ExternalLink";
+import { SectionHeader } from "../Misc/SectionHeader";
 
 import { ThemeContext } from "../../contexts/ThemeContext";
 

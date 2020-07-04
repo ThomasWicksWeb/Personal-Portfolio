@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
-import ExternalLink from "../Misc/ExternalLink";
+import {ExternalLink} from "../Misc/ExternalLink";
 import "./AppFooter.scss";
+
 import { ThemeContext } from "../../contexts/ThemeContext";
 
 const ContactMe = () => {
