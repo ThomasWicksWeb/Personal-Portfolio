@@ -11,18 +11,17 @@ const Slider = ({ currentHourOfDay }) => {
   const [SliderValue, setSliderValue] = useState(false);
 
   useEffect(() => {
-    if (currentHourOfDay <= 5 || currentHourOfDay >= 20) {
+    if (currentHourOfDay <= 5 || currentHourOfDay >= 21) {
       // SliderRef.checked = true;
       setSliderValue(true);
       setTheme(false);
+
       // Border to border marker
       BorderMarkerCSS();
     }
-  }, []);
+  }, [setTheme, currentHourOfDay]);
 
-  const handleSlider = (e) => {
-    // e.preventDefault();
-
+  const handleSlider = () => {
     if (SliderValue) {
       setSliderValue(false);
       setTheme(true);
