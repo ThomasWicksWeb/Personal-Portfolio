@@ -8,6 +8,9 @@ const personalProjectsLarge = [
     github: "https://github.com/ThomasWicksWeb/Keep-My-Notes-App",
     techUsed: "React, React Router, Firebase Authentication & Firestore, Bulma",
   },
+];
+
+const personalProjectsSmall = [
   {
     title: "Web Dev Resources",
     desc:
@@ -18,9 +21,6 @@ const personalProjectsLarge = [
     github: "https://github.com/ThomasWicksWeb/Web-Dev-Resources",
     techUsed: "React, Bulma",
   },
-];
-
-const personalProjectsSmall = [
   {
     title: "German Word-A-Day!",
     desc:
@@ -31,16 +31,16 @@ const personalProjectsSmall = [
     github: "https://github.com/ThomasWicksWeb/German-Word-A-Day",
     techUsed: "React",
   },
-  {
-    title: "Tesla Tracker",
-    desc:
-      "A website used for tracking the sales of Tesla models from 2015 to 2018.",
-    img: "./images/teslaBackground-min.jpg",
-    imgAlt: "Tesla Tracker Thumbnail",
-    live: "./Projects/TeslaStatsWIP/index.html",
-    github: "https://github.com/ThomasWicksWeb/Tesla-Tracker",
-    techUsed: "Bulma, Charts JS",
-  },
+  // {
+  //   title: "Tesla Tracker",
+  //   desc:
+  //     "A website used for tracking the sales of Tesla models from 2015 to 2018.",
+  //   img: "./images/teslaBackground-min.jpg",
+  //   imgAlt: "Tesla Tracker Thumbnail",
+  //   live: "./Projects/TeslaStatsWIP/index.html",
+  //   github: "https://github.com/ThomasWicksWeb/Tesla-Tracker",
+  //   techUsed: "Bulma, Charts JS",
+  // },
 ];
 
 export { personalProjectsLarge, personalProjectsSmall };
