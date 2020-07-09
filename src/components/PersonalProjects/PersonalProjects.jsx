@@ -21,7 +21,7 @@ const PersonalProjects = () => {
         return (
           <p className="is-size-6">
             <strong>Login Credentials - </strong>
-            Username: <i>{item.username}</i>; Password: <i>{item.password}</i>
+            Username: <i>{item.username}</i> Password: <i>{item.password}</i>
           </p>
         );
       }
