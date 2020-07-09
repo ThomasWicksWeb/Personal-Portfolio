@@ -42,7 +42,6 @@ const PersonalProjects = () => {
           <img
             src={item.img}
             alt={item.imgAlt}
-            title="Drip on the Wall WIP Thumbnail"
           />
         </a>
         <div
