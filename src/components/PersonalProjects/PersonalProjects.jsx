@@ -14,8 +14,10 @@ const PersonalProjects = () => {
 
   // Mapping projects that appear as large (Web Dev Resources)
   const PPListLarge = personalProjectsLarge.map((item) => {
+
+    // Check to see if 
     const CheckIfAuthNeeded = () => {
-      if (item.auth) {
+      if (item.username && item.password) {
         return (
           <p className="is-size-6">
             <strong>Login Credentials - </strong>
