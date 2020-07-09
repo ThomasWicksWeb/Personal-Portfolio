@@ -97,19 +97,19 @@ const PersonalProjects = () => {
               {item.techUsed}
             </strong>
           </p>
-          <p className={classnames("is-size-6 ProjectLinkContainer")}>
-            <ExternalLink
-              href={item.live}
-              text={"View Project"}
-              icon={"fas fa-external-link-alt is-size-5"}
-            />
-            <ExternalLink
-              text={"View on GitHub"}
-              icon={"fab fa-github is-size-5"}
-              href={item.github}
-            />
-          </p>
         </div>
+        <p className={classnames("is-size-6 ProjectLinkContainer")}>
+          <ExternalLink
+            href={item.live}
+            text={"View Project"}
+            icon={"fas fa-external-link-alt is-size-5"}
+          />
+          <ExternalLink
+            text={"View on GitHub"}
+            icon={"fab fa-github is-size-5"}
+            href={item.github}
+          />
+        </p>
       </article>
     );
   });
