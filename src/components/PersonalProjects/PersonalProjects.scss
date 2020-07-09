@@ -4,10 +4,13 @@
 }
 
 article {
-    background-color: white; // Change to -- #1f2b46 -- in dark mode
+    background-color: rgba(255, 255, 255, 0.938);// Change to -- #1f2b46 -- in dark mode
+    background-color: white;// Change to -- #1f2b46 -- in dark mode
     border-radius: 20px;
     padding: 15px;
     background-image: url('./images/dottedBackground.png');
+    display: flex;
+    flex-direction: column;
 }
 
 img {
@@ -16,6 +19,9 @@ img {
 }
 
 .textContainer {
+
+    display: flex;
+    flex-direction: column;
 
     & > * {
         padding: 0 0 6px 0;
@@ -53,6 +59,16 @@ img {
     display: grid !important;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 3rem !important;
+}
+
+.ProjectLinkContainer {
+
+    margin-top: auto !important;
+    justify-self: flex-end !important;
+    & > * {
+        align-self: flex-end;
+        justify-self: flex-end;
+    }
 }
 
 @media only screen and (max-width: 568px) {
