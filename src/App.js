@@ -1,13 +1,10 @@
 import React from "react";
-import { TopBar } from "./components/TopBar";
-import { MainSplash } from "./components/MainSplash";
-import { AboutMe } from "./components/AboutMe";
-import { ClientWork } from "./components/ClientWork";
-import { PersonalProjects } from "./components/PersonalProjects";
-import { ContactMe } from "./components/ContactMe";
-import { Footer } from "./components/Footer";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-import ThemeContextProvider from "./contexts/ThemeContext";
+import { TopBar } from "./components/TopBar";
+import { MainPage } from "./Routes/MainPage";
+import { ContactPage } from "./Routes/ContactPage";
+import { Footer } from "./components/Footer";
 
 import "./style.scss";
 
@@ -16,17 +13,21 @@ function App() {
   const currentHourOfDay = new Date().getHours();
 
   return (
-    <ThemeContextProvider>
-      <main>
+    <main>
+      <BrowserRouter>
         <TopBar currentHourOfDay={currentHourOfDay} />
-        <MainSplash currentHourOfDay={currentHourOfDay} />
-        <AboutMe />
-        <ClientWork />
-        <PersonalProjects />
-        <ContactMe />
-        <Footer />
-      </main>
-    </ThemeContextProvider>
+        <Switch>
+          <Route
+            path="/"
+            component={MainPage}
+            currentHourOfDay={currentHourOfDay}
+            exact
+          />
+          <Route path="/contact" component={ContactPage} exact />
+        </Switch>
+      </BrowserRouter>
+      <Footer />
+    </main>
   );
 }
 
