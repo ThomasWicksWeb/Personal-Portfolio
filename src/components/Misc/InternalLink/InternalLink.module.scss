@@ -12,8 +12,9 @@
     right: -0.1px;
     bottom: 0;
     transition: top .1s ease-in-out;
-    background-color: rgba(255, 147, 0, 0.5);
-    // background-color: #AEFFDA;
+
+    // Background color is now defined as a React styled-component in the component itself
+    // background-color: rgba(255, 147, 0, 0.5);
 }
 
 .borderMarker:hover::after {
