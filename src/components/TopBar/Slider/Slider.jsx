@@ -12,12 +12,8 @@ const Slider = ({ currentHourOfDay }) => {
 
   useEffect(() => {
     if (currentHourOfDay <= 5 || currentHourOfDay >= 21) {
-      // SliderRef.checked = true;
       setSliderValue(true);
       setTheme(false);
-
-      // Border to border marker
-      BorderMarkerCSS();
     }
   }, [setTheme, currentHourOfDay]);
 
@@ -25,19 +21,11 @@ const Slider = ({ currentHourOfDay }) => {
     if (SliderValue) {
       setSliderValue(false);
       setTheme(true);
-      BorderMarkerCSS();
     } else {
       setSliderValue(true);
       setTheme(false);
-      BorderMarkerCSS();
     }
   };
-
-  function BorderMarkerCSS() {
-    document
-      .querySelectorAll(".borderMarker")
-      .forEach((e) => e.classList.toggle("borderMarkerDark"));
-  }
 
   return (
     <div>
