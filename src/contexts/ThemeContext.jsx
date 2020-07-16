@@ -7,7 +7,7 @@ const ThemeContextProvider = (props) => {
 
   const Theme = {
     light: {
-      syntax: "black",
+      syntax: "#333",
       backgroundColorLight: "rgba(255, 255, 255, 0.938)",
       backgroundColorDark: "#fafafa",
       textBackground: "rgba(255, 147, 0, 0.5)",
