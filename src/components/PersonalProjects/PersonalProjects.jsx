@@ -14,14 +14,14 @@ const PersonalProjects = () => {
 
   // Mapping projects that appear as large (Web Dev Resources)
   const PPListLarge = personalProjectsLarge.map((item) => {
-
-    // Check to see if 
+    // Check to see if
     const CheckIfAuthNeeded = () => {
       if (item.username && item.password) {
         return (
           <p className="is-size-6">
             <strong>Give it a Try - </strong>
-            Username: <i>{item.username}</i> &amp; Password: <i>{item.password}</i>
+            Username: <i>{item.username}</i> &amp; Password:{" "}
+            <i>{item.password}</i>
           </p>
         );
       }
@@ -39,10 +39,7 @@ const PersonalProjects = () => {
           rel="noopener noreferrer"
           className="link"
         >
-          <img
-            src={item.img}
-            alt={item.imgAlt}
-          />
+          <img src={item.img} alt={item.imgAlt} />
         </a>
         <div
           className="textContainer dottedWhenDark"
