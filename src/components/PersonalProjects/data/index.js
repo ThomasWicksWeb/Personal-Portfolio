@@ -7,7 +7,7 @@ const personalProjectsLarge = [
     live: "https://keepmynotes.app",
     github: "https://github.com/ThomasWicksWeb/Keep-My-Notes-App",
     techUsed: "React, React Router, Firebase Authentication & Firestore, Bulma",
-    username: "test",
+    email: "test@test.com",
     password: "test123"
   },
 ];
