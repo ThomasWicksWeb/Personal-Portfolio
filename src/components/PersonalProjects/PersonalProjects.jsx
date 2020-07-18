@@ -19,7 +19,7 @@ const PersonalProjects = () => {
       if (item.username && item.password) {
         return (
           <p className="is-size-6">
-            <strong>Give it a Try - </strong>
+            <strong style={{color: LocalTheme.syntax}}>Give it a Try - </strong>
             Username: <i>{item.username}</i> &amp; Password:{" "}
             <i>{item.password}</i>
           </p>
