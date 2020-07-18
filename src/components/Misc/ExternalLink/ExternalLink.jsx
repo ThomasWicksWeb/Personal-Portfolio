@@ -28,8 +28,6 @@ const ExternalLink = ({ text, icon, href }) => {
 
       & strong {
         color: ${LocalTheme.syntax};
-
-        
       }
     `;
   } else {
