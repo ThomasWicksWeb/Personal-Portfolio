@@ -12,6 +12,7 @@ const ThemeContextProvider = (props) => {
       backgroundColorDark: "#fafafa",
       textBackground: "rgba(255, 147, 0, 0.5)",
       wicksLogoBorder: "2px solid #333",
+      externalLinkHover: "#4a69bd"
     },
     dark: {
       syntax: "white",
@@ -21,6 +22,7 @@ const ThemeContextProvider = (props) => {
       linkText: "lightskyblue",
       textBackground: "#e54242",
       wicksLogoBorder: "2px solid white",
+      externalLinkHover: "#4a69bd"
     },
   };
 
