@@ -2,14 +2,19 @@ import React, { useContext } from "react";
 import { ThemeContext } from "../../contexts/ThemeContext";
 import { SectionHeader } from "../../components/Misc/SectionHeader";
 
+import styles from "./ReportABug.module.scss";
+
 const ReportABug = () => {
   const { IsLightTheme, Theme } = useContext(ThemeContext);
   const LocalTheme = IsLightTheme ? Theme.light : Theme.dark;
 
   return (
-    <main>
+    <main styles={styles.DottedBG}>
       <section
-        className="section"
+        // Not sure why the imported styles from the scss file
+        // does not apply the dottedBG background image.
+        // However, the current workaround is applying the 'contactMe' class below
+        className="section contactMe"
         style={{
           backgroundColor: LocalTheme.backgroundColorDark,
           color: LocalTheme.syntax,
@@ -26,7 +31,6 @@ const ReportABug = () => {
             action="https://formspree.io/thomaswicks.ch@gmail.com"
             method="POST"
           >
-
             <div className="field">
               <label
                 htmlFor="email"
