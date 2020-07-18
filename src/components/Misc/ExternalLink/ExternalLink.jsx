@@ -21,7 +21,8 @@ const ExternalLink = ({ text, icon, href }) => {
 
       &:hover {
         & strong {
-          color: ${Theme.dark.syntax}
+          // color: ${Theme.dark.syntax}
+          color: ${LocalTheme.syntax}
         }
       }
 
