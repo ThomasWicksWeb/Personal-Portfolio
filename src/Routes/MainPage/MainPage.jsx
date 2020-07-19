@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 // All components
 import { MainSplash } from "../../components/MainSplash";
@@ -15,6 +16,10 @@ const MainPage = ({ currentHourOfDay }) => {
       <ClientWork />
       <PersonalProjects />
       <ContactMe />
+
+      <Helmet>
+        <title>Thomas Wicks | Web Development</title>
+      </Helmet>
     </>
   );
 };
