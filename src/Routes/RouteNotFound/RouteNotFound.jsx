@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 import classnames from "classnames";
 
@@ -35,13 +36,19 @@ const RouteNotFound = () => {
           <div className="has-text-centered">
             <Link
               to="/"
-              className={classnames("is-size-6 button is-link has-text-weight-bold", styles.HeadBack)}
+              className={classnames(
+                "is-size-6 button is-link has-text-weight-bold",
+                styles.HeadBack
+              )}
             >
               Head back
             </Link>
           </div>
         </div>
       </section>
+      <Helmet>
+        <title>Thomas Wicks | Whoops! 404!</title>
+      </Helmet>
     </main>
   );
 };
