@@ -1,4 +1,6 @@
 import React, { useContext } from "react";
+import { Helmet } from "react-helmet";
+
 import { ThemeContext } from "../../contexts/ThemeContext";
 import { SectionHeader } from "../../components/Misc/SectionHeader";
 
@@ -80,6 +82,9 @@ const ReportABug = () => {
           </form>
         </div>
       </section>
+      <Helmet>
+        <title>Thomas Wicks | Report a Bug</title>
+      </Helmet>
     </main>
   );
 };
