@@ -9,9 +9,9 @@ const TechUsed = () => {
     "React",
     "HTML & (S)CSS",
     "Google Firebase",
+    "MongoDB",
     "Tailwind CSS",
-    "Bulma",
-    // "Vue",
+    "Bulma CSS",
   ];
 
   return (
@@ -26,7 +26,9 @@ const TechUsed = () => {
       </h3>
       <ul className={styles.ListContainer}>
         {TechItems.map((item) => {
-          return <li className={classnames("is-size-6", styles.ListItem)}>{item}</li>;
+          return (
+            <li className={classnames("is-size-6", styles.ListItem)}>{item}</li>
+          );
         })}
       </ul>
     </div>
