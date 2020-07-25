@@ -3,6 +3,7 @@ import "./AboutMe.scss";
 import { Emoji } from "../Misc/Emoji";
 import { SectionHeader } from "../Misc/SectionHeader";
 import { ExternalLink } from "../Misc/ExternalLink";
+import { TechUsed } from "./TechUsed";
 
 import { ThemeContext } from "../../contexts/ThemeContext";
 
@@ -55,6 +56,7 @@ const AboutMe = () => {
                   // icon="🐶"
                 />
               </p>
+              <TechUsed />
             </div>
             <div>
               <img src="./images/thatsme.jpg" alt="That's me!" />
