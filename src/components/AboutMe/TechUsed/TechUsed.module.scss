@@ -1,0 +1,16 @@
+.TechUsedHeader {
+  margin-top: 1rem;
+  margin-bottom: 10px;
+}
+
+.ListContainer {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  grid-gap: 10px;
+  max-width: 100%;
+}
+
+.ListItem {
+  font-family: monospace;
+}
