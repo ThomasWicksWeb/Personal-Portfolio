@@ -22,7 +22,7 @@ const TechUsed = () => {
           styles.TechUsedHeader
         )}
       >
-        Recent Tech Used
+        Recent Tech I've Used
       </h3>
       <ul className={styles.ListContainer}>
         {TechItems.map((item) => {
