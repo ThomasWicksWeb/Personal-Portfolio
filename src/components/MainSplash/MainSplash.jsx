@@ -13,7 +13,7 @@ const MainSplash = ({ currentHourOfDay }) => {
       return "🌅 Good (super early) morning, I'm";
     } else if (currentHourOfDay >= 3 && currentHourOfDay <= 11) {
       return "🌅 Good morning, I'm";
-    } else if (currentHourOfDay >= 12 && currentHourOfDay <= 17) {
+    } else if (currentHourOfDay >= 12 && currentHourOfDay <= 19) {
       return "☀️ Good afternoon, I'm";
     } else {
       return "🌇 Good evening, I'm";
