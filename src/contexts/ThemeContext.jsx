@@ -8,7 +8,7 @@ const ThemeContextProvider = (props) => {
   const Theme = {
     light: {
       syntax: "#333",
-      backgroundColorLight: "rgba(255, 255, 255, 0.938)",
+      backgroundColorLight: "#fff",
       backgroundColorDark: "#fafafa",
       textBackground: "rgba(255, 147, 0, 0.5)",
       wicksLogoBorder: "2px solid #333",
