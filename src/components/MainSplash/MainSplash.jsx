@@ -8,6 +8,8 @@ import { ThemeContext } from "../../contexts/ThemeContext";
 
 const MainSplash = ({ currentHourOfDay }) => {
   // Custom greeting for the visitor based on time of day
+  currentHourOfDay = new Date().getHours(); // Props are broken, need to check why
+
   const GetGreeting = () => {
     if (currentHourOfDay <= 2) {
       return "🌅 Good (super early) morning, I'm";
