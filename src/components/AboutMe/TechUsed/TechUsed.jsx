@@ -7,11 +7,11 @@ const TechUsed = () => {
   const TechItems = [
     "Javascript (ES6+)",
     "React",
+    "TypeScript",
     "HTML & (S)CSS",
     "Google Firebase",
     "MongoDB",
     "Tailwind CSS",
-    "Bulma CSS",
   ];
 
   return (
