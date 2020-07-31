@@ -1,43 +1,28 @@
-// .sectionHeader {
-//     margin: .5rem 0 .5rem 0;
-//     font-family: 'Muli', sans-serif;
-//     font-weight: 700;
-//     padding-left: 25px;
-
-//     &:not(:last-child) {
-//         padding-bottom: -10rem !important;
-//     }
-    
-// }
-
 .bannerTextContainer {
+  .sectionHeader {
+    margin: 0.5rem 0 0.5rem 0;
+    font-family: "Muli", sans-serif;
+    font-weight: 700;
+    padding-left: 25px;
 
-    .sectionHeader {
-        margin: .5rem 0 .5rem 0;
-        font-family: 'Muli', sans-serif;
-        font-weight: 700;
-        padding-left: 25px;
-    
-        &:not(:last-child) {
-            padding-bottom: -10rem !important;
-        }
-        
+    &:not(:last-child) {
+      padding-bottom: -10rem !important;
     }
+  }
 
-    @media only screen and (max-width: 568px) {
-        .bannerTextContainer {
-            align-items: center;
-            justify-content: center;
-            padding-left: 0;
-        }
+  @media only screen and (max-width: 568px) {
+    .bannerTextContainer {
+      align-items: center;
+      justify-content: center;
+      padding-left: 0;
     }
-
+  }
 }
 
-// @media only screen and (max-width: 568px) {
-//     .bannerTextContainer {
-//         align-items: center;
-//         justify-content: center;
-//         padding-left: 0;
-//     }
-// }
+.OrangeColorBar {
+  height: 2rem;
+  width: 6.5rem;
+  margin-top: -2.7rem;
+  margin-left: 1.25rem;
+//   background-color: rgba(255, 147, 0, 0.5);
+}

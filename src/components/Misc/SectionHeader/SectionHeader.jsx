@@ -17,6 +17,12 @@ const SectionHeader = ({ HeaderText, emoji, label, classes }) => {
       >
         {HeaderText} <Emoji emoji={emoji} label={label} classes={classes} />
       </h3>
+      <div
+        className={styles.OrangeColorBar}
+        style={{ backgroundColor: LocalTheme.textBackground }}
+      >
+        &nbsp;
+      </div>
     </div>
   );
 };
