@@ -1,7 +1,7 @@
 const projectsLarge = [
     {
         title: "Fuller Fabrications (Work in Progress)",
-        desc: "Created an online presence for California-based company Fuller Fabrications",
+        desc: "Creating an online presence for California-based company Fuller Fabrications",
         img: "./images/FullerFab-min.jpg",
         imgAlt: "Fuller Fabrications Thumbnail",
         live: "https://boring-shaw-8df3a6.netlify.app/",
