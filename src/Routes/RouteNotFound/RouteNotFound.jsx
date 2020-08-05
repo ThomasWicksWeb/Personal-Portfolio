@@ -31,8 +31,9 @@ const RouteNotFound = () => {
             className={styles.FrankImage}
           />
           <h2 className="is-size-4 has-text-centered">
-            Whoops! Looks like you took the wrong turn
+            Whoops! Looks like you took the wrong turn.
           </h2>
+          <h3 className="is-size-5 has-text-centered">But here's a photo of Frank :)</h3>
           <div className="has-text-centered">
             <Link
               to="/"
