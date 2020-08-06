@@ -2,20 +2,22 @@ import React, { useContext, useRef, useEffect, useState } from "react";
 import styles from "./Slider.module.scss";
 import classnames from "classnames";
 import { ThemeContext } from "../../../contexts/ThemeContext";
+import { HoursContext } from "contexts/HoursContext";
 
-const Slider = ({ currentHourOfDay }) => {
+const Slider = () => {
   const { setTheme } = useContext(ThemeContext);
+  const { Hours } = useContext(HoursContext);
 
   const SliderRef = useRef();
 
   const [SliderValue, setSliderValue] = useState(false);
 
   useEffect(() => {
-    if (currentHourOfDay <= 5 || currentHourOfDay >= 21) {
+    if (Hours <= 5 || Hours >= 21) {
       setSliderValue(true);
       setTheme(false);
     }
-  }, [setTheme, currentHourOfDay]);
+  }, [setTheme, Hours]);
 
   const handleSlider = () => {
     if (SliderValue) {
