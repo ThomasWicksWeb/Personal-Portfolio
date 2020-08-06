@@ -5,17 +5,17 @@ import { ExternalLink } from "components/Misc/ExternalLink";
 import "./MainSplash.scss";
 
 import { ThemeContext } from "../../contexts/ThemeContext";
+import { HoursContext } from "../../contexts/HoursContext";
 
-const MainSplash = ({ currentHourOfDay }) => {
-  // Custom greeting for the visitor based on time of day
-  currentHourOfDay = new Date().getHours(); // Props are broken, need to check why
+const MainSplash = () => {
+  const { Hours } = useContext(HoursContext);
 
   const GetGreeting = () => {
-    if (currentHourOfDay <= 2) {
+    if (Hours <= 2) {
       return "🌅 Good (super early) morning, I'm";
-    } else if (currentHourOfDay >= 3 && currentHourOfDay <= 11) {
+    } else if (Hours >= 3 && Hours <= 11) {
       return "🌅 Good morning, I'm";
-    } else if (currentHourOfDay >= 12 && currentHourOfDay <= 19) {
+    } else if (Hours >= 12 && Hours <= 19) {
       return "☀️ Good afternoon, I'm";
     } else {
       return "🌇 Good evening, I'm";
