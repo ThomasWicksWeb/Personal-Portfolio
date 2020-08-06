@@ -8,10 +8,11 @@ import { ClientWork } from "../../components/ClientWork";
 import { PersonalProjects } from "../../components/PersonalProjects";
 import { ContactMe } from "../../components/ContactMe";
 
-const MainPage = ({ currentHourOfDay }) => {
+const MainPage = () => {
+
   return (
     <>
-      <MainSplash currentHourOfDay={currentHourOfDay} />
+      <MainSplash />
       <AboutMe />
       <ClientWork />
       <PersonalProjects />
