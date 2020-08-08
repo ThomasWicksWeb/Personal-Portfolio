@@ -1,3 +1,33 @@
+// #aboutMe {
+//   max-width: 100% !important;
+// }
+
+// .sectionPadding {
+//   padding: 2rem 1rem;
+// }
+
+// .AboutMeColumns {
+//   width: 100%;
+//   max-width: 1200px;
+//   margin: 40px auto;
+//   padding: 0 20px;
+//   box-sizing: border-box;
+
+//   display: grid;
+//   align-items: center;
+//   grid-template-columns: repeat(auto-fill, minmax(22rem, 50%));
+//   grid-gap: 30px;
+//   max-width: 1050px;
+// }
+
+// .AboutMeColumns > * {
+//   margin: 0 auto;
+// }
+
+// .tint {
+//   background-color: #f8f8f8;
+// }
+
 #aboutMe {
   max-width: 100% !important;
 }
@@ -17,7 +47,7 @@
   align-items: center;
   grid-template-columns: repeat(auto-fill, minmax(22rem, 50%));
   grid-gap: 30px;
-  max-width: 1050px;
+  // max-width: 1050px;
 }
 
 .AboutMeColumns > * {
@@ -26,4 +56,26 @@
 
 .tint {
   background-color: #f8f8f8;
+}
+
+@media only screen and (max-width: 568px) {
+  .sectionPadding {
+    padding: 2rem 0rem;
+  }
+
+  .AboutMeColumns {
+    width: 100%;
+    max-width: 100%;
+    margin: 30px auto;
+    padding: 0 20px;
+    
+    grid-template-columns: repeat(auto-fill, minmax(22rem, 50%));
+    grid-gap: 10px;
+    // max-width: 1050px;
+  }
+
+  .ImageOfMe {
+    padding-right: 15px;
+    border-radius: 15px !important;
+  }
 }
