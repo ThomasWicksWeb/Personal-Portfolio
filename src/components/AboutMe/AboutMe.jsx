@@ -59,7 +59,11 @@ const AboutMe = () => {
               <TechUsed />
             </div>
             <div>
-              <img src="./images/thatsme.jpg" alt="That's me!" className="ImageOfMe" />
+              <img
+                src="./images/thatsme.jpg"
+                alt="That's me!"
+                className="ImageOfMe"
+              />
             </div>
           </div>
         </div>
