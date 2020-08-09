@@ -58,6 +58,10 @@
   background-color: #f8f8f8;
 }
 
+.ImageOfMe {
+  margin-left: -8px;
+}
+
 @media only screen and (max-width: 568px) {
   .sectionPadding {
     padding: 2rem 0rem;
@@ -68,14 +72,14 @@
     max-width: 100%;
     margin: 30px auto;
     padding: 0 20px;
-    
+
     grid-template-columns: repeat(auto-fill, minmax(22rem, 50%));
     grid-gap: 10px;
     // max-width: 1050px;
   }
 
   .ImageOfMe {
-    padding-right: 15px;
+    // padding-right: 15px;
     border-radius: 15px !important;
   }
 }
