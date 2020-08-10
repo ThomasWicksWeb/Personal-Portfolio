@@ -1,9 +1,13 @@
 import React, { useContext } from "react";
+import styled from "styled-components";
 import { projectsLarge, projectsSmall } from "./data/data";
 import { ExternalLink } from "../Misc/ExternalLink";
 import { SectionHeader } from "../Misc/SectionHeader";
 
 import { ThemeContext } from "../../contexts/ThemeContext";
+
+import imageLight from "./images/LineBackgroundRightLight.svg";
+import imageDark from "./images/LineBackgroundRightDark.svg";
 
 import classnames from "classnames";
 import "./ClientWork.scss";
@@ -114,8 +118,16 @@ const ClientWork = () => {
     );
   });
 
+  let background = IsLightTheme ? imageLight : imageDark;
+
+  const Wrapper = styled.section`
+    // background-image: url("${background}");
+    // background-position: left;
+    // background-repeat: no-repeat;
+  `;
+
   return (
-    <section
+    <Wrapper
       className="section"
       style={{ backgroundColor: LocalTheme.backgroundColorDark }}
     >
@@ -132,7 +144,7 @@ const ClientWork = () => {
           {PPListSmall}
         </div>
       </div>
-    </section>
+    </Wrapper>
   );
 };
 
