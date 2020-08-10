@@ -1,11 +1,18 @@
 import React, { useContext } from "react";
+import styled from "styled-components";
 import classnames from "classnames";
 import { personalProjectsLarge, personalProjectsSmall } from "./data";
 import { ExternalLink } from "../Misc/ExternalLink";
 import { SectionHeader } from "../Misc/SectionHeader";
 
+// Contexts
 import { ThemeContext } from "../../contexts/ThemeContext";
 
+// Images
+import imageLight from "./images/LineBackgroundLeftLight.svg";
+import imageDark from "./images/LineBackgroundLeftDark.svg";
+
+// SCSS
 import "./PersonalProjects.scss";
 
 const PersonalProjects = () => {
@@ -19,7 +26,9 @@ const PersonalProjects = () => {
       if (item.username && item.password) {
         return (
           <p className="is-size-6">
-            <strong style={{color: LocalTheme.syntax}}>Give it a Try - </strong>
+            <strong style={{ color: LocalTheme.syntax }}>
+              Give it a Try -{" "}
+            </strong>
             Username: <i>{item.username}</i> &amp; Password:{" "}
             <i>{item.password}</i>
           </p>
@@ -124,8 +133,16 @@ const PersonalProjects = () => {
     );
   });
 
+  let background = IsLightTheme ? imageLight : imageDark;
+
+  const Wrapper = styled.section`
+    background-image: url("${background}");
+    background-position: left;
+    background-repeat: no-repeat;
+  `;
+
   return (
-    <section
+    <Wrapper
       className="section personalProjectsSection"
       style={{ backgroundColor: LocalTheme.backgroundColorLight }}
     >
@@ -142,7 +159,7 @@ const PersonalProjects = () => {
           {PPListSmall}
         </div>
       </div>
-    </section>
+    </Wrapper>
   );
 };
 
