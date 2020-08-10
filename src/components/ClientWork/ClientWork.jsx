@@ -6,9 +6,6 @@ import { SectionHeader } from "../Misc/SectionHeader";
 
 import { ThemeContext } from "../../contexts/ThemeContext";
 
-import imageLight from "./images/LineBackgroundRightLight.svg";
-import imageDark from "./images/LineBackgroundRightDark.svg";
-
 import classnames from "classnames";
 import "./ClientWork.scss";
 
@@ -118,16 +115,9 @@ const ClientWork = () => {
     );
   });
 
-  let background = IsLightTheme ? imageLight : imageDark;
-
-  const Wrapper = styled.section`
-    // background-image: url("${background}");
-    // background-position: left;
-    // background-repeat: no-repeat;
-  `;
 
   return (
-    <Wrapper
+    <section
       className="section"
       style={{ backgroundColor: LocalTheme.backgroundColorDark }}
     >
@@ -144,7 +134,7 @@ const ClientWork = () => {
           {PPListSmall}
         </div>
       </div>
-    </Wrapper>
+    </section>
   );
 };
 
