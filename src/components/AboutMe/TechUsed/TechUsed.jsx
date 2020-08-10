@@ -27,7 +27,7 @@ const TechUsed = () => {
       <ul className={styles.ListContainer}>
         {TechItems.map((item) => {
           return (
-            <li className={classnames("is-size-6", styles.ListItem)}>{item}</li>
+            <li key={item} className={classnames("is-size-6", styles.ListItem)}>{item}</li>
           );
         })}
       </ul>
