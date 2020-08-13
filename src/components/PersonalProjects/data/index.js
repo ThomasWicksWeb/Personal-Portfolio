@@ -1,4 +1,4 @@
-const personalProjectsLarge = [
+const projectsLarge = [
   {
     title: "Keep My Notes",
     desc: "A lightning fast and lightweight notes app on the web",
@@ -8,11 +8,11 @@ const personalProjectsLarge = [
     github: "https://github.com/ThomasWicksWeb/Keep-My-Notes-App",
     techUsed: "React, React Router, Firebase Authentication & Firestore, Bulma",
     username: "test@test.com",
-    password: "test123"
+    password: "test123",
   },
 ];
 
-const personalProjectsSmall = [
+const projectsSmall = [
   {
     title: "Web Dev Resources",
     desc:
@@ -45,4 +45,4 @@ const personalProjectsSmall = [
   // },
 ];
 
-export { personalProjectsLarge, personalProjectsSmall };
+export { projectsLarge, projectsSmall };
