@@ -11,7 +11,7 @@ import { ContactMe } from "../../components/ContactMe";
 const MainPage = () => {
 
   return (
-    <>
+    <main>
       <MainSplash />
       <AboutMe />
       <ClientWork />
@@ -21,7 +21,7 @@ const MainPage = () => {
       <Helmet>
         <title>Thomas Wicks | Web Development</title>
       </Helmet>
-    </>
+    </main>
   );
 };
 
