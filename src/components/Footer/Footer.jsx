@@ -12,7 +12,7 @@ const ContactMe = () => {
     <footer
       className="footer block"
       style={{
-        backgroundColor: LocalTheme.backgroundColorLight,
+        backgroundColor: LocalTheme.backgroundColorDark,
         color: LocalTheme.syntax,
       }}
     >

@@ -13,7 +13,7 @@ const ContactMe = () => {
       id="contactMe"
       className="section contactMe"
       style={{
-        backgroundColor: LocalTheme.backgroundColorDark,
+        backgroundColor: LocalTheme.backgroundColorLight,
         color: LocalTheme.syntax,
       }}
     >
