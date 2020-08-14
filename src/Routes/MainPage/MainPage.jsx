@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Helmet } from "react-helmet";
+import styled from "styled-components";
+
+import styles from "./MainPage.module.scss";
 
 // All components
 import { MainSplash } from "../../components/MainSplash";
@@ -8,14 +11,32 @@ import { ClientWork } from "./ClientWork";
 import { PersonalProjects } from "./PersonalProjects";
 import { ContactMe } from "../../components/ContactMe";
 
-const MainPage = () => {
+// Images
+import ImgLight from "./images/LineBackgroundLeftLight.svg";
+import ImgDark from "./images/LineBackgroundLeftDark.svg";
+
+// Contexts
+import { ThemeContext } from "../../contexts/ThemeContext";
+
+export default function MainPage() {
+  const { IsLightTheme, Theme } = useContext(ThemeContext);
+  const LocalTheme = IsLightTheme ? Theme.light : Theme.dark;
+  let img = IsLightTheme ? ImgLight : ImgDark;
+
+  const BackgroundImageWrapper = styled.div`
+    background-image: url(${img});
+    background-color: ${LocalTheme.backgroundColorDark};
+    background-repeat: no-repeat;
+  `;
 
   return (
     <main>
       <MainSplash />
       <AboutMe />
-      <ClientWork />
-      <PersonalProjects />
+      <BackgroundImageWrapper>
+        <ClientWork />
+        <PersonalProjects />
+      </BackgroundImageWrapper>
       <ContactMe />
 
       <Helmet>
@@ -23,6 +44,4 @@ const MainPage = () => {
       </Helmet>
     </main>
   );
-};
-
-export default MainPage;
+}
