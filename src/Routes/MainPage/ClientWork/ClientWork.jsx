@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 
 // Components
 import { SectionHeader } from "../../../components/Misc/SectionHeader";
@@ -8,18 +8,9 @@ import { SmallProjects } from "../../../components/SmallProjects";
 // Data
 import { projectsLarge, projectsSmall } from "./data/data";
 
-// Contexts
-import { ThemeContext } from "../../../contexts/ThemeContext";
-
 const ClientWork = () => {
-  const { IsLightTheme, Theme } = useContext(ThemeContext);
-  const LocalTheme = IsLightTheme ? Theme.light : Theme.dark;
-
   return (
-    <section
-      className="section"
-      style={{ backgroundColor: LocalTheme.backgroundColorDark }}
-    >
+    <section className="section">
       <SectionHeader emoji="📁" label="Folder emoji" HeaderText="Client Work" />
       <LargeProjects data={projectsLarge} />
       <SmallProjects data={projectsSmall} />
