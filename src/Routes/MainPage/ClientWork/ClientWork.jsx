@@ -1,15 +1,15 @@
 import React, { useContext } from "react";
 
 // Components
-import { SectionHeader } from "../Misc/SectionHeader";
-import { LargeProjects } from "../LargeProjects";
-import { SmallProjects } from "../SmallProjects";
+import { SectionHeader } from "../../../components/Misc/SectionHeader";
+import { LargeProjects } from "../../../components/LargeProjects";
+import { SmallProjects } from "../../../components/SmallProjects";
 
 // Data
 import { projectsLarge, projectsSmall } from "./data/data";
 
 // Contexts
-import { ThemeContext } from "../../contexts/ThemeContext";
+import { ThemeContext } from "../../../contexts/ThemeContext";
 
 const ClientWork = () => {
   const { IsLightTheme, Theme } = useContext(ThemeContext);

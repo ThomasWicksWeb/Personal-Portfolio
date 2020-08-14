@@ -4,8 +4,8 @@ import { Helmet } from "react-helmet";
 // All components
 import { MainSplash } from "../../components/MainSplash";
 import { AboutMe } from "../../components/AboutMe";
-import { ClientWork } from "../../components/ClientWork";
-import { PersonalProjects } from "../../components/PersonalProjects";
+import { ClientWork } from "./ClientWork";
+import { PersonalProjects } from "./PersonalProjects";
 import { ContactMe } from "../../components/ContactMe";
 
 const MainPage = () => {
