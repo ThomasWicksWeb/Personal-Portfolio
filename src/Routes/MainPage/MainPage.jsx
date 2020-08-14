@@ -2,8 +2,6 @@ import React, { useContext } from "react";
 import { Helmet } from "react-helmet";
 import styled from "styled-components";
 
-import styles from "./MainPage.module.scss";
-
 // All components
 import { MainSplash } from "../../components/MainSplash";
 import { AboutMe } from "../../components/AboutMe";
