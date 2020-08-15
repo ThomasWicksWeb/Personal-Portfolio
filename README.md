@@ -1,3 +1,7 @@
+# Personal Portfolio | Thomas Wicks
+
+A personal portoflio showcase of all the client work and personal projects I've worked on in the past, and the projects I am still working on.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
