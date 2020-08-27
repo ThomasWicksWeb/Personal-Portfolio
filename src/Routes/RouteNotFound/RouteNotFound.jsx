@@ -1,12 +1,19 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-
 import classnames from "classnames";
 
-import { ThemeContext } from "../../contexts/ThemeContext";
-import styles from "./RouteNotFound.module.scss";
+// Images
 import Frank404 from "./images/frank-404-min.jpg";
+
+// Styles
+import styles from "./RouteNotFound.module.scss";
+
+// Components
+import { InternalLink } from '../../components/Misc/InternalLink'
+
+// Contexts
+import { ThemeContext } from "../../contexts/ThemeContext";
 
 const RouteNotFound = () => {
   const { IsLightTheme, Theme } = useContext(ThemeContext);
@@ -35,7 +42,7 @@ const RouteNotFound = () => {
           </h2>
           <h3 className="is-size-5 has-text-centered">But here's a photo of Frank :)</h3>
           <div className="has-text-centered">
-            <Link
+            {/* <Link
               to="/"
               className={classnames(
                 "is-size-6 button is-link has-text-weight-bold",
@@ -43,7 +50,8 @@ const RouteNotFound = () => {
               )}
             >
               Head back
-            </Link>
+            </Link> */}
+            <InternalLink text="Head Back" href="/" />
           </div>
         </div>
       </section>
