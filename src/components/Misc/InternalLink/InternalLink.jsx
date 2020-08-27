@@ -29,7 +29,7 @@ export default function InternalLink({ text, to }){
   return (
     <Link
       to={to}
-      onClick={() => window.scroll({ top: 0, left: 0, behavior: "smooth" })}
+      // onClick={() => window.scroll({ top: 0, left: 0, behavior: "smooth" })}
     >
       <Wrapper>
         <strong>{text}</strong>
