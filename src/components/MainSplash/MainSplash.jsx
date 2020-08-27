@@ -58,7 +58,7 @@ const MainSplash = () => {
         </p>
         <p className="is-size-5 zFix">
           If you're looking to get in touch,
-          <InternalLink href="#contactMe" text="shoot me an email" emoji="✉️" />
+          <InternalLink to="/contact" text="shoot me an email" emoji="✉️" />
         </p>
         <p className="is-size-5 icons minH MainSplashIcons">
           <ExternalLink
