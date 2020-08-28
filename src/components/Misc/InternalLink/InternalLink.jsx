@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export default function InternalLink({ text, to }){
+import { ThemeContext } from "../../../contexts/ThemeContext";
+
+export default function InternalLink({ text, to }) {
+  const { IsLightTheme, Theme } = useContext(ThemeContext);
+  const LocalTheme = IsLightTheme ? Theme.light : Theme.dark;
+
   const Wrapper = styled.span`
     position: relative;
-    color: #333;
+    // color: #333;
+    color: ${LocalTheme.syntax};
     padding: 4px 8px;
     margin: 0 0.5rem;
     &::after {
@@ -17,7 +23,8 @@ export default function InternalLink({ text, to }){
       right: -0.1px !important;
       bottom: 0 !important;
       transition: top 0.1s ease-in-out;
-      background-color: rgba(255, 147, 0, 0.5) !important;
+      // background-color: rgba(255, 147, 0, 0.5) !important;
+      background-color: ${LocalTheme.textBackground} !important;
     }
     &:hover::after {
       top: 0 !important;
@@ -36,4 +43,4 @@ export default function InternalLink({ text, to }){
       </Wrapper>
     </Link>
   );
-};
+}
