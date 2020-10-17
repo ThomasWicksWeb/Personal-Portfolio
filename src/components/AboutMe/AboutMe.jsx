@@ -31,6 +31,12 @@ const AboutMe = () => {
           <div className="projectsSmallGrid AboutMeColumns">
             <div>
               <p className="is-size-5">
+                I am currently pursuing a career in law enforcement as a police
+                officer.
+                <Emoji label="Police Officer" emoji="👮" />
+              </p>
+              <br />
+              <p className="is-size-5">
                 I've recently graduated from Farmingdale State College this last
                 May with a Bachelor's degree in Computer Programming &amp;
                 Information Systems

@@ -44,16 +44,23 @@ const MainSplash = () => {
             <Emoji emoji="🎉" label="Cheers!" />
           </span>
         </p>
-        <p className="is-size-5 has-text-centered">
+        {/* <p className="is-size-5 has-text-centered">
           a software developer from the little-known state of New York.
+        </p> */}
+        <p className="is-size-5 has-text-centered">
+          an aspiring law enforcement officer in the state of Connecticut.
         </p>
-        <p className="is-size-5">Down below are some of my projects</p>
+        <p className="is-size-5">Down below are some of my web projects</p>
         <p className="is-size-5 zFix">
           Alternatively, you can view my
-          <InternalLink
+          {/* <InternalLink
             href="https://thomaswicks.com/resume.pdf"
             text="résumé"
             emoji="📝"
+          /> */}
+          <ExternalLink
+            text="résumé"
+            href="https://thomaswicks.com/resume.pdf"
           />
         </p>
         <p className="is-size-5 zFix">
