@@ -48,7 +48,7 @@ const MainSplash = () => {
           a software developer from the little-known state of New York.
         </p> */}
         <p className="is-size-5 has-text-centered">
-          an aspiring law enforcement officer in the state of Connecticut.
+          an aspiring law enforcement officer.
         </p>
         <p className="is-size-5">Down below are some of my web projects</p>
         <p className="is-size-5 zFix">
