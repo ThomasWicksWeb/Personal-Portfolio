@@ -30,12 +30,12 @@ const AboutMe = () => {
         <div className="smallGridParent">
           <div className="projectsSmallGrid AboutMeColumns">
             <div>
-              <p className="is-size-5">
+              {/* <p className="is-size-5">
                 I am currently pursuing a career in law enforcement as a police
                 officer.
                 <Emoji label="Police Officer" emoji="👮" />
               </p>
-              <br />
+              <br /> */}
               <p className="is-size-5">
                 I've recently graduated from Farmingdale State College in May of
                 2020 with a Bachelor's degree in Computer Programming &amp;
