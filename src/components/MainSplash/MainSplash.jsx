@@ -51,18 +51,13 @@ const MainSplash = () => {
           a police officer recruit in the state of North Carolina.
         </p>
         <p className="is-size-5">Down below are some of my web projects</p>
-        <p className="is-size-5 zFix">
+        {/* <p className="is-size-5 zFix">
           Alternatively, you can view my
-          {/* <InternalLink
-            href="https://thomaswicks.com/resume.pdf"
-            text="résumé"
-            emoji="📝"
-          /> */}
           <ExternalLink
             text="résumé"
             href="https://thomaswicks.com/resume.pdf"
           />
-        </p>
+        </p> */}
         <p className="is-size-5 zFix">
           If you're looking to get in touch,
           <InternalLink to="/contact" text="shoot me an email" emoji="✉️" />
