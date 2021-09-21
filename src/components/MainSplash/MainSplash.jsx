@@ -22,6 +22,8 @@ const MainSplash = () => {
     }
   };
 
+  console.log(`Current hour is: ${Hours}`);
+
   const { IsLightTheme, Theme } = useContext(ThemeContext);
   const LocalTheme = IsLightTheme ? Theme.light : Theme.dark;
 
@@ -44,20 +46,20 @@ const MainSplash = () => {
             <Emoji emoji="🎉" label="Cheers!" />
           </span>
         </p>
-        {/* <p className="is-size-5 has-text-centered">
-          a software developer from the little-known state of New York.
-        </p> */}
         <p className="is-size-5 has-text-centered">
-          a police officer recruit in the state of North Carolina.
+          an aspiring software developer in the great state of North Carolina.
         </p>
+        {/* <p className="is-size-5 has-text-centered">
+          a police officer recruit in the state of North Carolina.
+        </p> */}
         <p className="is-size-5">Down below are some of my web projects</p>
-        {/* <p className="is-size-5 zFix">
+        <p className="is-size-5 zFix">
           Alternatively, you can view my
           <ExternalLink
             text="résumé"
             href="https://thomaswicks.com/resume.pdf"
           />
-        </p> */}
+        </p>
         <p className="is-size-5 zFix">
           If you're looking to get in touch,
           <InternalLink to="/contact" text="shoot me an email" emoji="✉️" />

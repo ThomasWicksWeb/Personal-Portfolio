@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import {ExternalLink} from "../Misc/ExternalLink";
+import { ExternalLink } from "../Misc/ExternalLink";
 import "./AppFooter.scss";
 
 import { ThemeContext } from "../../contexts/ThemeContext";
@@ -20,8 +20,13 @@ const ContactMe = () => {
         <p className="is-size-5">
           Built with <i className="fas fa-heart redHeart"></i> by{" "}
           <strong style={{ color: LocalTheme.syntax }}>Thomas Wicks</strong> in
-          [rainy, sunny, hot, humid, cold] New York
+          North Carolina
         </p>
+        {/* <p className="is-size-5">
+          Built with <i className="fas fa-heart redHeart"></i> by{" "}
+          <strong style={{ color: LocalTheme.syntax }}>Thomas Wicks</strong> in
+          [rainy, sunny, hot, humid, cold] New York
+        </p> */}
         <p className="is-size-5 minH footerIcons redHeart negMarginLeft">
           <ExternalLink
             text="GitHub "
