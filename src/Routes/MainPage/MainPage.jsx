@@ -21,8 +21,9 @@ export default function MainPage() {
   const LocalTheme = IsLightTheme ? Theme.light : Theme.dark;
   let img = IsLightTheme ? ImgLight : ImgDark;
 
+  // If wanting to add bcakground image back, push following line down to BackgroundImageWraapper
+  // background-image: url(${img});
   const BackgroundImageWrapper = styled.div`
-    background-image: url(${img});
     background-color: ${LocalTheme.backgroundColorDark};
     background-repeat: no-repeat;
   `;
