@@ -32,21 +32,24 @@ const ContactMe = () => {
             text="GitHub "
             icon="fab fa-github is-size-5 icons noWrap"
             label="GitHub"
-            href="https://github.com/ThomasWicksWeb"
+            // href="https://github.com/ThomasWicksWeb"
+            href="#"
           />
 
           <ExternalLink
             text="LinkedIn "
             icon="fas fa-external-link-alt is-size-5 icons noWrap"
             label="LinkedIn"
-            href="https://www.linkedin.com/in/thomas-wicks-280b5717a/"
+            // href="https://www.linkedin.com/in/thomas-wicks-280b5717a/"
+            href="#"
           />
 
           <ExternalLink
             text="Résumé "
             icon="fas fa-file-alt icons noWrap"
             label="Résumé"
-            href="https://www.thomaswicks.com/resume.pdf"
+            // href="https://www.thomaswicks.com/resume.pdf"
+            href="#"
           />
         </p>
       </div>

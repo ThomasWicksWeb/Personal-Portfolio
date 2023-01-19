@@ -47,7 +47,11 @@ const MainSplash = () => {
           </span>
         </p>
         <p className="is-size-5 has-text-centered">
+          <strike>
           an aspiring software developer in the great state of North Carolina.
+            </strike>
+            <br />
+            definitely didn't become a police officer instead.
         </p>
         {/* <p className="is-size-5 has-text-centered">
           a police officer recruit in the state of North Carolina.
@@ -57,7 +61,8 @@ const MainSplash = () => {
           Alternatively, you can view my
           <ExternalLink
             text="résumé"
-            href="https://thomaswicks.com/resume.pdf"
+            // href="https://thomaswicks.com/resume.pdf"
+            href="#"
           />
         </p>
         <p className="is-size-5 zFix">
@@ -68,13 +73,15 @@ const MainSplash = () => {
           <ExternalLink
             text="GitHub"
             icon="fas fa-external-link-alt is-size-5"
-            href="https://github.com/ThomasWicksWeb"
+            // href="https://github.com/ThomasWicksWeb"
+            href="#"
           />
 
           <ExternalLink
             text="LinkedIn"
             icon="fas fa-external-link-alt is-size-5"
-            href="https://www.linkedin.com/in/thomas-wicks-280b5717a/"
+            // href="https://www.linkedin.com/in/thomas-wicks-280b5717a/"
+            href="#"
           />
         </p>
         <p id="scrollOnDown" className="is-size-5 arrowBounce">
